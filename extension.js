@@ -1,7 +1,7 @@
 (function () {
     
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "klawisz1313";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -56,17 +56,17 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        botName: "DTVbot",
+        language: "polish",
+        chatLink: "https://github.com/klawisz1313/basicBot-customization/blob/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
-        autowoot: true,
+        autowoot: false,
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         blacklistEnabled: true,
@@ -76,49 +76,48 @@
         cycleGuard: true,
         maximumCycletime: 10,
         voteSkip: false,
-        voteSkipLimit: 10,
-        historySkip: false,
+        voteSkipLimit: 20,
+        historySkip: true,
         timeGuard: true,
-        maximumSongLength: 10,
-        autodisable: true,
-        commandCooldown: 30,
+        maximumSongLength: 6,
+        autodisable: false,
+        commandCooldown: 10,
         usercommandsEnabled: true,
         skipPosition: 3,
         skipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["theme", "Utwór nie pasuje do tematyki pokoju. "],
+            ["op", "Utwór jest na liście OP. "],
+            ["history", "Utwór jest w historii. "],
+            ["mix", "Utwór nizgodny z regulaminem. "],
+            ["sound", "Utwór złej jakości/nie gra. "],
+            ["unavailable", "Utwór niedostępny. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: true,
+        motdInterval: 60,
+        motd: "Zajrzyj na mój stream twitch.tv/disstream ",
         filterChat: true,
         etaRestriction: false,
-        welcome: true,
+        welcome: false,
         opLink: null,
-        rulesLink: null,
+        rulesLink: http://justpaste.it/m4co ,
         themeLink: null,
-        fbLink: null,
-        youtubeLink: null,
-        website: null,
+        fbLink: https://www.facebook.com/DisStream ,
+        youtubeLink: https://www.youtube.com/user/DisStream ,
+        website: disstream.tv,
         intervalMessages: [],
-        messageInterval: 5,
-        songstats: true,
+        messageInterval: 45,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/BANNEDlist.json"
+            NSFW: "https://github.com/klawisz1313/basicBot-customization/blob/master/blacklists/NSFWlist.json",
+            OP: "https://github.com/klawisz1313/basicBot-customization/blob/master/blacklists/OPlist.json",
+            BANNED: "https://github.com/klawisz1313/basicBot-customization/blob/master/blacklists/BANNEDlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://github.com/klawisz1313/basicBot-customization/edit/master/extension.js", extend);
 
 }).call(this);
