@@ -90,7 +90,7 @@
             ["history", "Utwór znajduje się w historii. "],
             ["mix", "Utwór sprzeczny z zasadami społeczności. "],
             ["sound", "Utwór słabej jakości, lub nie jest to piosenka. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
+            ["nsfw", "NSFW. "],
             ["unavailable", "Utwór niedostępny dla części użytkowników. "]
         ],
         afkpositionCheck: 15,
