@@ -58,7 +58,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "DTVbot",
         language: "polish",
-        chatLink: "https://github.com/klawisz1313/basicBot-customization/blob/master/lang/en.json",
+        chatLink: "https://rawgit.com/klawisz1313/basicBot-customization/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
