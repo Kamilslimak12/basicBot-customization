@@ -81,8 +81,8 @@
         timeGuard: true,
         maximumSongLength: 6,
         autodisable: false,
-        commandCooldown: 10,
-        usercommandsEnabled: true,
+        commandCooldown: 5,
+        usercommandsEnabled: false,
         skipPosition: 3,
         skipReasons: [
             ["theme", "Utwór nie pasuje do temtyki pokoju. "],
