@@ -85,12 +85,13 @@
         usercommandsEnabled: true,
         skipPosition: 3,
         skipReasons: [
-            ["theme", "Utwór nie pasuje do tematyki pokoju. "],
-            ["op", "Utwór jest na liście OP. "],
-            ["history", "Utwór jest w historii. "],
-            ["mix", "Utwór nizgodny z regulaminem. "],
-            ["sound", "Utwór złej jakości/nie gra. "],
-            ["unavailable", "Utwór niedostępny. "]
+             ["theme", "This song does not fit the room theme. "],
+            ["op", "This song is on the OP list. "],
+            ["history", "This song is in the history. "],
+            ["mix", "You played a mix, which is against the rules. "],
+            ["sound", "The song you played had bad sound quality or no sound. "],
+            ["nsfw", "The song you contained was NSFW (image or sound). "],
+            ["unavailable", "The song you played was not available for some users. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
