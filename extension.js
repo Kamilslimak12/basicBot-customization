@@ -57,7 +57,7 @@
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "DTVbot",
-        language: "polish",
+        language: "string",
         chatLink: "https://rawgit.com/klawisz1313/basicBot-customization/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
@@ -83,7 +83,7 @@
         autodisable: false,
         commandCooldown: 5,
         usercommandsEnabled: false,
-        skipPosition: 3,
+        skipPosition: 50,
         skipReasons: [
             ["theme", "Utwór nie pasuje do temtyki pokoju. "],
             ["op", "Utwór znajduje się na liście OverPlayed. "],
