@@ -83,7 +83,7 @@
         autodisable: false,
         commandCooldown: 5,
         usercommandsEnabled: false,
-        skipPosition: 3,
+        skipPosition: 50,
         skipReasons: [
             ["theme", "Utwór nie pasuje do temtyki pokoju. "],
             ["op", "Utwór znajduje się na liście OverPlayed. "],
