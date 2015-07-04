@@ -115,7 +115,7 @@
     "autodisable": "Automatyczne wyłączanie",
     "autoskip": "Autopomijanie",
     "newblacklisted": "\/me [@%%NAME%%] Utwór znajduje się na %%BLACKLIST%% ! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
-    "blinfo": "[@%%NAME%%] Lista zbanowanych utworów - autor: %%AUTHOR%%, tytuł: %%TITLE%%, mid: %%SONGID%%",
+    "blinfo": "[@%%NAME%%] Aby zbanować - autor: %%AUTHOR%%, tytuł: %%TITLE%%, mid: %%SONGID%%",
     "blacklist": "Lista zbanowanych utworów",
     "cycleguard": "cycleguard",
     "timeguard": "timeguard",
