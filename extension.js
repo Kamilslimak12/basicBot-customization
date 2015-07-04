@@ -106,7 +106,7 @@
         themeLink: null,
         fbLink: "https://www.facebook.com/DisStream" ,
         youtubeLink: "https://www.youtube.com/user/DisStream" ,
-        website: "disstream.tv",
+        website: "http://www.disstream.tv/",
         intervalMessages: [],
         messageInterval: 45,
         songstats: false,
