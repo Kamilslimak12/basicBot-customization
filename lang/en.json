@@ -185,7 +185,7 @@
     "pong": "\/me Pong!",
     "reload": "\/me Zaraz wracam.",
     "removenotinwl": "\/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
-    "roomrules": "\/me Please find the room rules here: %%LINK%%",
+    "roomrules": "\/me Zasady znajadują się tutaj: %%LINK%% Pamiętaj że regulamin jest często aktualizowany. Na górze masz informację kiedy była ostatnia aktualizacja. ",
     "sessionstats": "\/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
     "forceskip": "\/me [%%NAME%% used forceskip]",
     "madeby": "\/me This bot was made by %%NAME%%.",
