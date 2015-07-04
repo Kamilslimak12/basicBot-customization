@@ -202,6 +202,6 @@
     "commandscd": "\/me [@%%NAME%%] Cooldown komend użytkowników jest ustawiony na  %%TIME%% sekund.",
     "voteratio": "\/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w\/m): %%RATIO%%.",
     "website": "\/me Odwiedź moją stronę: %%LINK%%",
-    "youtube": "\/me [%%NAME%%] Subskrybuj mnie na youtube: %%LINK%%",
+    "youtube": "\/me [%%NAME%%] Subskrybuj Disa na youtube: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M."
 }
