@@ -96,7 +96,7 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 10,
+        motdInterval: 15,
         motd: "Zajrzyj na mój stream http://www.twitch.tv/disstream",
         filterChat: true,
         etaRestriction: true,
