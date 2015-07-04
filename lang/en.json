@@ -71,7 +71,7 @@
     "notavailable": "\/me @%%NAME%%, utwór który puściłeś nie był dostępny.",
     "timelimit": "\/me @%%NAME%%, twój utwór jes dłuższy niż %%MAXLENGTH%% minut, potrzebujesz uprawnień aby puszczać dłuższe utwory.",
     "permissionownsong": "\/me :up: @%%NAME%% ma uprawnienia!",
-    "isblacklisted": "\/me Utwór jest na liście %%BLACKLIST%% ! Pomijam...",
+    "isblacklisted": "\/me Utwór jest zbanowany! Pomijam...",
     "isopen": "\/me Ruletka włączona! Wpisz !join aby zagrać. (Gra w której wylosowana osoba, jest wrzucana, na losowe miejsce w liście oczekiwania)",
     "winnerpicked": "\/me Zwycięzca: @%%NAME%% przenisiony na %%POSITION%% miejsce.",
     "ball": "\/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
