@@ -83,7 +83,7 @@
         autodisable: false,
         commandCooldown: 5,
         usercommandsEnabled: false,
-        skipPosition: 50,
+        skipPosition: 3,
         skipReasons: [
             ["theme", "Utwór nie pasuje do temtyki pokoju. "],
             ["op", "Utwór znajduje się na liście OverPlayed. "],
@@ -95,7 +95,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: true,
+        motdEnabled: false,
         motdInterval: 15,
         motd: "Zajrzyj na mój stream http://www.twitch.tv/disstream",
         filterChat: true,
