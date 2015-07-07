@@ -69,7 +69,7 @@
     "welcomeback": "\/me Witaj ponownie, %%NAME%%",
     "songknown": "\/me @%%NAME%%, utwór znajduje się w historii.",
     "notavailable": "\/me @%%NAME%%, utwór który puściłeś nie był dostępny.",
-    "timelimit": "\/me @%%NAME%%, twój utwór jes dłuższy niż %%MAXLENGTH%% minut, potrzebujesz uprawnień aby puszczać dłuższe utwory.",
+    "timelimit": "\/me @%%NAME%%, twój utwór jest dłuższy niż %%MAXLENGTH%% minut, potrzebujesz uprawnień aby puszczać dłuższe utwory.",
     "permissionownsong": "\/me :up: @%%NAME%% ma uprawnienia!",
     "isblacklisted": "\/me Utwór jest zbanowany! Pomijam...",
     "isopen": "\/me Ruletka włączona! Wpisz !join aby zagrać. (Gra w której wylosowana osoba, jest wrzucana, na losowe miejsce w liście oczekiwania)",
