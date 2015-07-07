@@ -98,7 +98,7 @@
         motdEnabled: false,
         motdInterval: 15,
         motd: "Zajrzyj na mój stream http://www.twitch.tv/disstream",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: true,
         welcome: false,
         opLink: null,
