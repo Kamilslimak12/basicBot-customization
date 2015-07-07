@@ -139,7 +139,7 @@
     "inactivefor": "\/me [@%%NAME%%] @%%USERNAME%% jest nieaktywny od %%TIME%%.",
     "inactivelonger": "\/me [@%%NAME%%] @%%USERNAME%% jest nieaktywny dłużej niż %%BOTNAME%% jest online.",
     "autowoot": "\/me Polecamy RCS: http:\/\/rcs.radiant.dj\/ Oferuje on opcje autojoin, autowoot i wiele wiele więcej. Zainstaluj i przekonaj się sam.",
-    "brandambassador": "\/me Ambasodorzy marki to osoby które szególnie które szególnie dbają o pluga. Więcej informacji https://plug.dj/ba",
+    "brandambassador": "\/me Ambasodorzy marki to osoby, które szczególnie dbają o pluga. Więcej informacji https://plug.dj/ba",
     "bouncerplusrank": "\/me [@%%NAME%%] Musisz być conajmniej menadżerem aby włączyć Bouncer+.",
     "chatcleared": "\/me [@%%NAME%%] Wyczyść czat.",
     "deletechat": "\/me [@%%NAME%%] Usuń z czatu użytkownika %%USERNAME%%.",
