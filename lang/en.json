@@ -144,7 +144,7 @@
     "chatcleared": "\/me [@%%NAME%%] Wyczyść czat.",
     "deletechat": "\/me [@%%NAME%%] Usuń z czatu użytkownika %%USERNAME%%.",
     "commandslink": "\/me %%BOTNAME%% Komendy: %%LINK%%",
-    "eatcookie": "\/me eats a cookie.",
+    "eatcookie": "\/me zjada ciastko.",
     "nousercookie": "\/em doesn't see %%NAME%% in room and eats a cookie himself.",
     "selfcookie": "\/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
