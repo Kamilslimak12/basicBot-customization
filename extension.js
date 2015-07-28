@@ -1,5 +1,5 @@
 (function () {
-    
+    // Dzieki za pomoc Wumekk. Jak cos bede chcial to Ci oddam dostep.
     //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "klawisz1313";
 		
