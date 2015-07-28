@@ -97,7 +97,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 18,
-        motd: "Zobacz co Norbert mówił w wywiadzie dla Polsat News http://www.ipla.tv/2015-07-12-lato-z-polsat-news-sopot/vod-6301124#/r-5",
+        motd: "Poradnik do pluga w wersji dla opornych http://i.imgur.com/IG95LvA.jpg",
         filterChat: false,
         etaRestriction: true,
         welcome: false,
