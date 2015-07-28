@@ -49,7 +49,7 @@
         };
         
         bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: '',  //twoja nazwa komendy, bez !
+            command: 'wumekk',  //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
             functionality: function (chat, cmd) {
@@ -57,7 +57,8 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
                 	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat(""); //wysyla wiadomosc
+                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); //wysyla wiadomosc
+                    API.sendChat("/lovespam");
                 }
             }
         };
