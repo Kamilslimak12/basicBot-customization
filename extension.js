@@ -135,7 +135,7 @@
             ["history", "Utwór znajduje się w historii. "],
             ["mix", "Utwór sprzeczny z zasadami społeczności. "],
             ["sound", "Utwór słabej jakości, lub nie jest to piosenka. "],
-            ["nsfw", "NSFW. Nie wiesz co NSFW? To sobie poszukaj w google. "],
+            ["nsfw", "NSFW. Wygooglujesz sobie co to. "],
             ["unavailable", "Utwór niedostępny dla części użytkowników. "]
         ],
         afkpositionCheck: 15,
