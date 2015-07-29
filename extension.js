@@ -58,7 +58,8 @@
                 else {
                 	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
                     API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); //wysyla wiadomosc
-                    API.sendChat("/lovespam");
+                    API.sendChat("");
+                    API.moderateMuteUser(API.getUserByName(chat.un).id, 1, API.MUTE.SHORT);
                 }
             }
         };
