@@ -1,5 +1,4 @@
 (function () {
-    // Dzieki za pomoc Wumekk. Jak cos bede chcial to Ci oddam dostep.
     //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "klawisz1313";
 		
@@ -61,7 +60,7 @@
                 }
             }
         };
-        /*
+        
         bot.commands.bronksKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'bronks',  //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
@@ -76,7 +75,7 @@
                 }
             }
         };
-*/
+
 	//i tyle :v
 	
 	
