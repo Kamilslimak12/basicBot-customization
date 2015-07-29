@@ -70,7 +70,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
                 	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Wielki człowiek, dumny obywatel naszego kraju. Jeden z najlepszych moderatorów i administartorów. Genialny gracz lola. Po wydarzeniach z  24 stycznia 2012 roku opóścił nasze państwo (to wtedy Sosnowiec wyemigrował z Polski). Wielkie brawa dla tego człowieka. Powitajmy @xBronks"); //wysyla wiadomosc
+                    API.sendChat("/me Wielki człowiek, dumny obywatel naszego kraju. Jeden z najlepszych moderatorów i administartorów. Genialny gracz lola. Po wydarzeniach z  24 stycznia 2012 roku opuścił nasze państwo (to wtedy Sosnowiec wyemigrował z Polski). Powitajmy @xBronks"); //wysyla wiadomosc
                    
                 }
             }
