@@ -61,6 +61,7 @@
                 }
             }
         };
+        /*
         bot.commands.bronksKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'bronks',  //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
@@ -75,7 +76,7 @@
                 }
             }
         };
-
+*/
 	//i tyle :v
 	
 	
