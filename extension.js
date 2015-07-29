@@ -75,6 +75,20 @@
                 }
             }
         };
+         bot.commands.loveKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+            command: 'love',  //twoja nazwa komendy, bez !
+            rank: 'user', //poziom użytkownika do jej odpalenia
+            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                else {
+                	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    API.sendChat(":heart: :purple_heart: :blue_heart: :green_heart: :yellow_heart: :heart: :yellow_heart: :green_heart: :blue_heart: :purple_heart: :heart:"); //wysyla wiadomosc
+                   
+                }
+            }
+        };
 
 	//i tyle :v
 	
