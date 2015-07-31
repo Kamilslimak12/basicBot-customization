@@ -37,7 +37,7 @@
         API.sendChat(msg);
 }
 
-bot.commands._nightmode: {
+bot.commands._nightmode = {
 			command: 'nightmode',
 			rank: 'bouncer',
 			type: 'exact',
