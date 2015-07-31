@@ -38,9 +38,9 @@
 }
 
 bot.commands._nightmode: {
-			command 'nightmode',
+			command: 'nightmode',
 			rank: 'bouncer',
-			type 'exact',
+			type: 'exact',
 			functionality: function (chat, cmd) {
 				if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     		if (!bot.commands.executable(this.rank, chat)) return void (0);
