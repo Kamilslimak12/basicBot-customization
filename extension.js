@@ -1,7 +1,7 @@
 (function () {
     //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "klawisz1313";
-		
+
     //Define our function responsible for extending the bot.
     function extend() {
         //If the bot hasn't been loaded properly, try again in 1 second(s).
@@ -35,80 +35,80 @@
          */
 
         bot.commands.opornyCommand = {
-            command: 'oporny',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'oporny', //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     API.sendChat("/me Poradnik do pluga w wersji dla opornych http://i.imgur.com/IG95LvA.jpg");
                 }
             }
         };
-        
+
         bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'wumekk',  //twoja nazwa komendy, bez !
+            command: 'wumekk', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
-                	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
                     API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); //wysyla wiadomosc
                 }
             }
         };
-        
+
         bot.commands.bronksKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'bronks',  //twoja nazwa komendy, bez !
+            command: 'bronks', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
-                	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
                     API.sendChat("/me Wielki człowiek, dumny obywatel Polski. Jeden z najlepszych moderatorów i administratorów. Genialny gracz lola. Po wydarzeniach z  24 stycznia 2012 roku opuścił nasze państwo (to wtedy Sosnowiec wyemigrował z Polski). Powitajmy @xBronks"); //wysyla wiadomosc
-                   
+
                 }
             }
         };
-         bot.commands.loveKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'love',  //twoja nazwa komendy, bez !
+        bot.commands.loveKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+            command: 'love', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
-                	//kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
                     API.sendChat(":heart: :purple_heart: :blue_heart: :green_heart: :yellow_heart: :heart: :yellow_heart: :green_heart: :blue_heart: :purple_heart: :heart:"); //wysyla wiadomosc
-                   
+
                 }
             }
         };
         bot.commands.praca = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'praca',  //twoja nazwa komendy, bez !
+            command: 'praca', //twoja nazwa komendy, bez !
             rank: 'manager', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
-                        //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
                     setTimeout(API.sendChat("!historyskip"), 5000); //wysyla wiadomosc
                     setTimeout(API.sendChat("!timeguard"), 5000); //wysyla wiadomosc
                     setTimeout(API.sendChat("!togglebl"), 5000); //wysyla wiadomosc
-                   
+
                 }
             }
         };
 
-	//i tyle :v
-	
-	
+        //i tyle :v
+
+
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -163,10 +163,10 @@
         etaRestriction: true,
         welcome: false,
         opLink: null,
-        rulesLink: "http://justpaste.it/m4co" ,
+        rulesLink: "http://justpaste.it/m4co",
         themeLink: null,
-        fbLink: "https://www.facebook.com/DisStream" ,
-        youtubeLink: "https://www.youtube.com/user/DisStream" ,
+        fbLink: "https://www.facebook.com/DisStream",
+        youtubeLink: "https://www.youtube.com/user/DisStream",
         website: "http://www.disstream.tv/",
         intervalMessages: [],
         messageInterval: 45,
