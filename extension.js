@@ -37,7 +37,7 @@
         API.sendChat(msg);
 }
 
-_nightmodeCommand: {
+bot.commands._nightmode: {
 			command 'nightmode',
 			rank: 'bouncer',
 			type 'exact',
@@ -52,7 +52,7 @@ _nightmodeCommand: {
                         		API.sendChat(tempstr);
                 		}
 			}
-		},
+		};
 
  
 bot.commands.praca = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
