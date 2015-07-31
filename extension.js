@@ -33,6 +33,26 @@
          }
 
          */
+         function tsendChat(msg) {
+        API.sendChat(msg);
+}
+ 
+bot.commands.praca = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+            command: 'praca',  //twoja nazwa komendy, bez !
+            rank: 'manager', //poziom użytkownika do jej odpalenia
+            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                else {
+                        //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    setTimeout(tsendChat("!historyskip"), 5000); //wysyla wiadomosc
+                    setTimeout(tsendChat("!timeguard"), 5000); //wysyla wiadomosc
+                    setTimeout(tsendChat("!togglebl"), 5000); //wysyla wiadomosc
+                   
+                }
+            }
+        };
 
         bot.commands.opornyCommand = {
             command: 'oporny', //The command to be called. With the standard command literal this would be: !bacon
@@ -89,23 +109,8 @@
                 }
             }
         };
-        bot.commands.praca = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'praca', //twoja nazwa komendy, bez !
-            rank: 'manager', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
-                else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    setTimeout((API.sendChat("!historyskip"), 5000)); //wysyla wiadomosc
-                    setTimeout((API.sendChat("!timeguard"), 5000)); //wysyla wiadomosc
-                    setTimeout((API.sendChat("!togglebl"), 5000)); //wysyla wiadomosc
 
-                }
-            }
-        };
-        
+
          bot.commands.RCSKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'instalacja', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
