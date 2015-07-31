@@ -46,8 +46,8 @@ bot.commands.praca = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
                 if (!bot.commands.executable(this.rank, chat)) return void (0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
                         //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    setTimeout(tsendChat("!historyskip"), 5000); //wysyla wiadomosc
-                    setTimeout(tsendChat("!timeguard"), 5000); //wysyla wiadomosc
+                    setTimeout(tsendChat("!historyskip"), 1000); //wysyla wiadomosc
+                    setTimeout(tsendChat("!timeguard"), 3000); //wysyla wiadomosc
                     setTimeout(tsendChat("!togglebl"), 5000); //wysyla wiadomosc
                    
                 }
