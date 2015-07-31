@@ -45,9 +45,9 @@ bot.commands._nightmode = {
 				if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     		if (!bot.commands.executable(this.rank, chat)) return void (0);
                 		else {	
-					bot.settings.timeGuard = !basicBot.settings.timeGuard;
-                        		bot.settings.blacklistEnabled = !basicBot.settings.blacklistEnabled;
-                        		bot.settings.historySkip = !basicBot.settings.historySkip;
+					bot.settings.timeGuard = !bpt.settings.timeGuard;
+                        		bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
+                        		bot.settings.historySkip = !bot.settings.historySkip;
                         		var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziekuje, dobranoc.';
                         		API.sendChat(tempstr);
                 		}
