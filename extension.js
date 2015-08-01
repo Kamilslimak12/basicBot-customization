@@ -146,6 +146,29 @@ bot.commands._nightmode = {
                 }
             };
 
+         bot.commands._f5 = {
+                command: 'reload',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(basicBot.chat.reload);
+                        sendToSocket();
+                        storeToStorage();
+                        bot.disconnectAPI();
+                        kill();
+                        setTimeout(function () {
+                            $.getScript(bot.scriptLink);
+                        }, 2000);
+                    }
+                }
+            };
+
+
+
+
         //i tyle :v
 
 
