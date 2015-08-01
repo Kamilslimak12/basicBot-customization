@@ -11,46 +11,13 @@
 
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
-        var basicBot = bot;
 
         //Load custom settings set below
         bot.retrieveSettings();
 
-    var kill = function () {
-        clearInterval(basicBot.room.autodisableInterval);
-        clearInterval(basicBot.room.afkInterval);
-        basicBot.status = false;
-    };
-
-
-	    var sendToSocket = function () {
-        var basicBotSettings = bot.settings;
-        var basicBotRoom = bot.room;
-        var basicBotInfo = {
-            time: Date.now(),
-            version: bot.version
-        };
-        var data = {users:API.getUsers(),userinfo:API.getUser(),room:location.pathname,basicBotSettings:basicBotSettings,basicBotRoom:basicBotRoom,basicBotInfo:basicBotInfo};
-        return sock.msg(data);
-    };
-
-    var storeToStorage = function () {
-        localStorage.setItem("basicBotsettings", JSON.stringify(bot.settings));
-        localStorage.setItem("basicBotRoom", JSON.stringify(bot.room));
-        var basicBotStorageInfo = {
-            time: Date.now(),
-            stored: true,
-            version: bot.version
-        };
-        localStorage.setItem("basicBotStorageInfo", JSON.stringify(basicBotStorageInfo));
-
-    };
-
-
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -63,7 +30,6 @@
          }
          }
          }
-
          */
          function tsendChat(msg) {
         API.sendChat(msg);
@@ -111,7 +77,7 @@ bot.commands._nightmode = {
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
                     //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem :heart:"); //wysyla wiadomosc
+                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); //wysyla wiadomosc
                 }
             }
         };
@@ -177,29 +143,6 @@ bot.commands._nightmode = {
                     }
                 }
             };
-
-         bot.commands._f5 = {
-                command: 'f5',
-                rank: 'bouncer',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(bot.chat.reload);
-                        sendToSocket();
-                        storeToStorage();
-                        bot.disconnectAPI();
-                        kill();
-                        setTimeout(function () {
-                            $.getScript("http://rawgit.com/klawisz1313/basicBot-customization/master/extension.js");
-                        }, 2000);
-                    }
-                }
-            };
-
-
-
 
         //i tyle :v
 
