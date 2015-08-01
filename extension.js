@@ -104,7 +104,7 @@ bot.commands._nightmode = {
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
                     //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem :heart: :purple_heart: :blue_heart: :green_heart: :yellow_heart: :heart: :yellow_heart: :green_heart: :blue_heart: :purple_heart: :heart:"); //wysyla wiadomosc
+                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem :heart:"); //wysyla wiadomosc
                 }
             }
         };
