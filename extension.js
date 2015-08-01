@@ -15,6 +15,30 @@
         //Load custom settings set below
         bot.retrieveSettings();
 
+	    var sendToSocket = function () {
+        var basicBotSettings = basicBot.settings;
+        var basicBotRoom = basicBot.room;
+        var basicBotInfo = {
+            time: Date.now(),
+            version: basicBot.version
+        };
+        var data = {users:API.getUsers(),userinfo:API.getUser(),room:location.pathname,basicBotSettings:basicBotSettings,basicBotRoom:basicBotRoom,basicBotInfo:basicBotInfo};
+        return sock.msg(data);
+    };
+
+    var storeToStorage = function () {
+        localStorage.setItem("basicBotsettings", JSON.stringify(basicBot.settings));
+        localStorage.setItem("basicBotRoom", JSON.stringify(basicBot.room));
+        var basicBotStorageInfo = {
+            time: Date.now(),
+            stored: true,
+            version: basicBot.version
+        };
+        localStorage.setItem("basicBotStorageInfo", JSON.stringify(basicBotStorageInfo));
+
+    };
+
+
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
