@@ -141,7 +141,7 @@ bot.commands._nightmode = {
                         var name = msg.substr(cmd.length + 2);
                         var user = bot.userUtilities.lookupUserName(name);
                         if (typeof user === 'boolean') return API.sendChat(subChat(bot.chat.invaliduserspecified, {name: chat.un}));
-                        if (chat.un === 'wumekk') API.moderateBanUser(user.id, 1, API.BAN.PERMA);
+                        if (chat.un.toLowerCase() === 'wumekk') API.moderateBanUser(user.id, 1, API.BAN.PERMA);
                     }
                 }
             },
