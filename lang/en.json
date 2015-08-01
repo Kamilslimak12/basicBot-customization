@@ -180,7 +180,7 @@
     "mutedtime": "\/me [@%%NAME%%] Zmutowa\u0142 @%%USERNAME%%  na %%TIME%% minut.",
     "unmuted": "\/me [@%%NAME%%] Odmutowa\u0142 @%%USERNAME%%.",
     "muterank": "\/me [@%%NAME%%] Nie mo\u017cesz zmutowa\u0107 osoby z tak\u0105 sam\u0105 lub wy\u017csz\u0105 rang\u0105 od Ciebie.",
-    "oplist": "\/me Lista OP: %%LINK%%",
+    "oplist": "\/me Lista zbanowanych utworów: %%LINK%%",
     "pong": "\/me Pong!",
     "reload": "\/me Zaraz wracam.",
     "removenotinwl": "\/me [@%%NAME%%] Wybrany u\u017cytkownik @%%USERNAME%% nie jest na li\u015bcie oczekiwania.",
