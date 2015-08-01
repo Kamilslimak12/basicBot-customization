@@ -16,6 +16,13 @@
         //Load custom settings set below
         bot.retrieveSettings();
 
+    var kill = function () {
+        clearInterval(basicBot.room.autodisableInterval);
+        clearInterval(basicBot.room.afkInterval);
+        basicBot.status = false;
+    };
+
+
 	    var sendToSocket = function () {
         var basicBotSettings = bot.settings;
         var basicBotRoom = bot.room;
