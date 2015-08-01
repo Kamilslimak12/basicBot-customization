@@ -160,7 +160,7 @@ bot.commands._nightmode = {
                         bot.disconnectAPI();
                         kill();
                         setTimeout(function () {
-                            $.getScript(bot.scriptLink);
+                            $.getScript("http://rawgit.com/klawisz1313/basicBot-customization/master/extension.js");
                         }, 2000);
                     }
                 }
