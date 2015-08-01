@@ -11,28 +11,29 @@
 
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
+        var basicBot = bot;
 
         //Load custom settings set below
         bot.retrieveSettings();
 
 	    var sendToSocket = function () {
-        var basicBotSettings = basicBot.settings;
-        var basicBotRoom = basicBot.room;
+        var basicBotSettings = bot.settings;
+        var basicBotRoom = bot.room;
         var basicBotInfo = {
             time: Date.now(),
-            version: basicBot.version
+            version: bot.version
         };
         var data = {users:API.getUsers(),userinfo:API.getUser(),room:location.pathname,basicBotSettings:basicBotSettings,basicBotRoom:basicBotRoom,basicBotInfo:basicBotInfo};
         return sock.msg(data);
     };
 
     var storeToStorage = function () {
-        localStorage.setItem("basicBotsettings", JSON.stringify(basicBot.settings));
-        localStorage.setItem("basicBotRoom", JSON.stringify(basicBot.room));
+        localStorage.setItem("basicBotsettings", JSON.stringify(bot.settings));
+        localStorage.setItem("basicBotRoom", JSON.stringify(bot.room));
         var basicBotStorageInfo = {
             time: Date.now(),
             stored: true,
-            version: basicBot.version
+            version: bot.version
         };
         localStorage.setItem("basicBotStorageInfo", JSON.stringify(basicBotStorageInfo));
 
