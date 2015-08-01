@@ -128,7 +128,7 @@ bot.commands._nightmode = {
             }
         };
         
-        bot.commands._ban: {
+        bot.commands._ban = {
                 command: 'permaban',
                 rank: 'bouncer',
                 type: 'startsWith',
