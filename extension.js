@@ -147,14 +147,14 @@ bot.commands._nightmode = {
             };
 
          bot.commands._f5 = {
-                command: 'reload',
+                command: 'f5',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat(basicBot.chat.reload);
+                        API.sendChat(bot.chat.reload);
                         sendToSocket();
                         storeToStorage();
                         bot.disconnectAPI();
