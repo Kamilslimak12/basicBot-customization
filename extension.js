@@ -184,7 +184,7 @@ bot.commands._nightmode = {
         filterChat: false,
         etaRestriction: true,
         welcome: false,
-        opLink: null,
+        opLink: "http://justpaste.it/mq3j",
         rulesLink: "http://justpaste.it/m4co",
         themeLink: null,
         fbLink: "https://www.facebook.com/DisStream",
