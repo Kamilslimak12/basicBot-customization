@@ -144,7 +144,7 @@ bot.commands._nightmode = {
                         if (chat.un.toLowerCase() === 'wumekk') API.moderateBanUser(user.id, 1, API.BAN.PERMA);
                     }
                 }
-            },
+            };
 
         //i tyle :v
 
