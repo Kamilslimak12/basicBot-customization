@@ -127,6 +127,24 @@ bot.commands._nightmode = {
                 }
             }
         };
+        
+        bot.commands._ban: {
+                command: 'permaban',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substr(cmd.length + 2);
+                        var user = bot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bot.chat.invaliduserspecified, {name: chat.un}));
+                        if (chat.un === 'wumekk') API.moderateBanUser(user.id, 1, API.BAN.PERMA);
+                    }
+                }
+            },
 
         //i tyle :v
 
