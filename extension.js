@@ -158,6 +158,7 @@ bot.commands._nightmode = {
         botName: "DTVbot",
         language: "string",
         chatLink: "https://rawgit.com/klawisz1313/basicBot-customization/master/lang/en.json",
+        scriptLink: "https://rawgit.com/klawisz1313/basicBot-customization/master/extension.js",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
