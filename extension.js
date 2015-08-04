@@ -197,7 +197,7 @@ bot.commands._nightmode = {
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 10,
-        motd: "Dwa szybkie poradniki jak rozwiązać problem z niedziałającym plugiem: http://i.imgur.com/0AezrQI.gif http://i.imgur.com/CSihaKA.gif",
+        motd: "Trzy szybkie poradniki jak rozwiązać problem z niedziałającym plugiem: Po pierwsze zmiana DNS na te od googla http://www.download.net.pl/jak-zmienic-serwery-dns-na-serwery-od-google/n/2161/ Jak nie pomoze to: http://i.imgur.com/0AezrQI.gif http://i.imgur.com/CSihaKA.gif",
         filterChat: false,
         etaRestriction: true,
         welcome: false,
