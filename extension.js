@@ -81,6 +81,19 @@ bot.commands._nightmode = {
                 }
             }
         };
+                bot.commands.komendywadafukKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+            command: 'komendy', //twoja nazwa komendy, bez !
+            rank: 'user', //poziom użytkownika do jej odpalenia
+            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                else {
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    API.sendChat("/me Lista komend (ta lepsza lista): http://git.io/vO1Gx"); //wysyla wiadomosc
+                }
+            }
+        };
 
         bot.commands.bronksKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'bronks', //twoja nazwa komendy, bez !
