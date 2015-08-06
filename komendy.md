@@ -3,6 +3,8 @@ Komendy:
 
 X oznacza liczbę/argument  
 Argumenty między ( ) są opcjonalne
+
+
 Lista została przeze mnie zmieniona. Usunąłem z niej te mniej potrzebne komendy oraz dodałem te które znajdują się w naszej customizacji bota.
 
 
