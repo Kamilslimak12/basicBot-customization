@@ -165,7 +165,7 @@ bot.commands._nightmode = {
                         var name = msg.substr(cmd.length + 2);
                         var user = bot.userUtilities.lookupUserName(name);
                         if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
-                        API.moderateBanUser(user.id, 1, API.BAN.DAY);
+                        API.moderateBanUser(user.id, 1, API.BAN.PERMA);
                     }
                 }
             };
