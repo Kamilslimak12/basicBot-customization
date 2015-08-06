@@ -97,11 +97,13 @@ User
 |!8ball | (message) | zadaj botowi pytanie. |
 |!autowoot | | wysyła link do RCS |
 |!instalacja | | poradnik jak zainstalować RCS |
+|!emoji | | link do listy emotikon |
+|!emoty | | emotikony jakie zyskuje się z dodatkiem RCS |
 |!ba | | przedstawia rangę "Ambasador Marki" |
+|!komendy | | wysyła link do tych komend |
 |!commands | | wysyła link do oryginalnych komend |
 |!cookie | (@user) | daje ciastko użytkownikowi |
 |!dclookup / !dc | | wpisz aby się przenieść na pozycję, na której się znajdowałaś/eś przed rozłączeniem |
-|!emoji | | link do listy emotikon |
 |!eta | | pokazuje za ile czasu zostaniesz DJem |
 |!fb | | wysyła link do facebooka DisStream |
 |!gif | (tag) | Bot wysyła gifa z podanymi tagami. W przypadku ich braku wysyłany jest losowy gif. |
@@ -114,7 +116,6 @@ User
 |!youtube | | link do kanału DTV |
 |!oporny | | wysyła poradnik do pluga w wersji dla opornych |
 |!wumekk | | cała prawda o Wumkku |
-|!komendy | | wysyła link do tych komend |
 |!bronks | | bezsensowna komenda |
 |!love | | kolorowe serca <3 |
 
