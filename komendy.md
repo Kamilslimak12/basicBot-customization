@@ -28,14 +28,6 @@ Manager
 |!usercommands | | włącza/wyłącza komendy dla zwykłych użytkowników |
 |!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
 
-
-Wumekk
--------
-
-|Komenda | Argument |  Opis |
-|:------:|:---------:|:--------------------------------------:|
-|!permaban | @user | banuje permanentnie użytkownika (do bouncerów: Jak ładnie poprosicie Wumkka i mu zapłacicie to może wam nada uprawnienia do tej komendy) |
-
 Bouncer+
 --------
 
@@ -49,6 +41,8 @@ Bouncer+
 |!move | @user (X) | przenieś użytkownika w liście oczekiwania na pozycję X, kiedy X nie jest podane przenosi na 1 pozycję |
 |!remove | @user | usuń użytkownika z listy oczekiwania |
 |!unlock | | odblokuj listę oczekiwania |
+|!permaban | @user | banuje permanentnie użytkownika
+
 
 Bouncer
 -------
@@ -60,6 +54,7 @@ Bouncer
 |!afktime | @user | pokaż jak długo użytkownik jest afk |
 |!autodisable | | włącz/wyłącz opcję autodisable |
 |!ban | @user | banuje użytkownika na 1 dzień |
+|!unban | @user | odbanowuje użytkownika |
 |!cycleguard | | włącz/wyłącz opcję cycleguard |
 |!dclookup / !dc | (@user) | przenieś użytkownika na pozycję, na której się znajdował, zanim się rozłączył |
 |!eta | (@user) | pokazuje przwidywalny czas oczekiwania |
@@ -71,14 +66,14 @@ Bouncer
 |!lockguard | | włącz/wyłącz opcję lockguard |
 |!motd | (X)/(message) |kiedy nie ma podanego argumentu, zostaje wysłana wiadomość dnia. X oznacza co ile utworów ma być wysyłana wiadomość. W polu message ustawia się nową wiadomość. |
 |!mute | @user (X) | wycisza użytkownika na X minut |
-|!reload | | przeładowuje bota |
+|!unmute | @user | zdejmuje mute z użytkownika |
+|!reload | | przeładowuje bota/u nas coś jest zbugowane więc nie polecam |
 |!restricteta | | włącz/wyłącz ograniczenie komendy eta (gdy włączone, użytkownik może użyć komendy eta raz na godzinę) |
-|!skip | (powód) | pomija DJa i wysyła do niego powód pominięcia |
 |!timeguard | | włącza/wyłącza opcję timeguard |
 |!togglebl | | włącza/wyłącza blacklisty |
 |!togglemotd | | włącza/wyłącza wiadomość dnia |
-|!unban | @user | odbanowuje użytkownika |
-|!unmute | | zdejmuje mute z użytkownika |
+|!skip | (powód) | pomija DJa i wysyła do niego powód pominięcia. Lista powodów: theme, meh, history, rules, sound, unavailable, nsfw. Wierzę, że jesteś w stanie sobie wygooglować co oznacza skrót NSFW. |
+
 
 Resident DJ
 -----------
