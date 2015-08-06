@@ -67,6 +67,19 @@ bot.commands._nightmode = {
                 }
             }
         };
+        
+         bot.commands.emotikonyCommand = {
+            command: 'emoty', //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    API.sendChat("/me Emotikony jakie uzyskujemy z RCS: https://rcs.radiant.dj/emotes");
+                }
+            }
+        };
 
         bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'wumekk', //twoja nazwa komendy, bez !
