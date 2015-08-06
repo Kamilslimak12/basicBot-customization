@@ -154,7 +154,7 @@ bot.commands._nightmode = {
         
         bot.commands._ban = {
                 command: 'permaban',
-                rank: 'bouncer',
+                rank: 'mod',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -164,11 +164,12 @@ bot.commands._nightmode = {
                         if (msg.length === cmd.length) return API.sendChat(subChat(bot.chat.nouserspecified, {name: chat.un}));
                         var name = msg.substr(cmd.length + 2);
                         var user = bot.userUtilities.lookupUserName(name);
-                        if (typeof user === 'boolean') return API.sendChat(subChat(bot.chat.invaliduserspecified, {name: chat.un}));
-                        if (chat.un.toLowerCase() === 'wumekk') API.moderateBanUser(user.id, 1, API.BAN.PERMA);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
+                        API.moderateBanUser(user.id, 1, API.BAN.DAY);
                     }
                 }
             };
+            
 
         //i tyle :v
 
