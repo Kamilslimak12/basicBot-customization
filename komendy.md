@@ -108,13 +108,13 @@ User
 |!fb | | wysyła link do facebooka DisStream |
 |!gif | (tag) | Bot wysyła gifa z podanymi tagami. W przypadku ich braku wysyłany jest losowy gif. |
 |!help | | link do obrazka z pomocą do pluga |
+|!oporny | | wysyła poradnik do pluga w wersji dla opornych |
 |!link | | kiedy jesteś DJem i użyjesz tej komendy bot wyśle link do aktualnie granego utworu |
 |!op | | link do listy zbanowanych utworów |
 |!ping | | PONG! |
 |!rules | | link do zasad/regulaminu |
 |!website | | link do strony DTV |
 |!youtube | | link do kanału DTV |
-|!oporny | | wysyła poradnik do pluga w wersji dla opornych |
 |!wumekk | | cała prawda o Wumkku |
 |!bronks | | bezsensowna komenda |
 |!love | | kolorowe serca <3 |
