@@ -212,9 +212,9 @@ bot.commands._nightmode = {
         skipPosition: 3,
         skipReasons: [
             ["theme", "Utwór nie pasuje do temtyki pokoju. "],
-            ["op", "Utwór znajduje się na liście OverPlayed. "],
+            ["meh", "Utwór otrzymał zbyt dużą ilość mehów. "],
             ["history", "Utwór znajduje się w historii. "],
-            ["mix", "Utwór sprzeczny z zasadami społeczności. "],
+            ["rules", "Utwór sprzeczny z zasadami społeczności. "],
             ["sound", "Utwór słabej jakości, lub nie jest to piosenka. "],
             ["nsfw", "NSFW. Wygooglujesz sobie co to. "],
             ["unavailable", "Utwór niedostępny dla części użytkowników. "]
