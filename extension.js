@@ -192,7 +192,7 @@ bot.commands._nightmode = {
         autowoot: false,
         smartSkip: false,
         cmdDeletion: true,
-        maximumAfk: 120,
+        maximumAfk: 60,
         afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
