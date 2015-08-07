@@ -37,10 +37,10 @@ Bouncer+
 |!afkremoval | | włącz/wyłącz usuwanie afków z listy oczekiwania |
 |!autoskip | | automatyczne pomijanie utworu po jego zakończeniu (używać kiedy plug się bugguje i nie robi tego sam) |
 |!lock | | blokuje listę oczekiwania |
+|!unlock | | odblokuj listę oczekiwania |
 |!lockdown | | włącz/wyłącz czat tylko dla administracji |
 |!move | @user (X) | przenieś użytkownika w liście oczekiwania na pozycję X, kiedy X nie jest podane przenosi na 1 pozycję |
 |!remove | @user | usuń użytkownika z listy oczekiwania |
-|!unlock | | odblokuj listę oczekiwania |
 |!permaban | @user | banuje permanentnie użytkownika
 
 
