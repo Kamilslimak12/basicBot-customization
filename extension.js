@@ -245,7 +245,7 @@ bot.commands._nightmode = {
             BANNED: "https://rawgit.com/klawisz1313/basicBot-customization/master/blacklists/BANNEDlist.json"
         }
     }));
-var spamWords = ['skip', 'skip pls', 'skip to gówno', 'pomińcie ten syf']; for (var i = 0; i < spamWords.length; i++) { window.bot.chatUtilities.spam.push(spamWords[i]); }
+var spamWords = ['skip', 'skip pls', 'skip to gówno', 'pomińcie ten syf']; for (var i = 0; i < spamWords.length; i++) { basicBot.bot.chatUtilities.spam.push(spamWords[i]); }
     //Start the bot and extend it when it has loaded.
     $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
 
