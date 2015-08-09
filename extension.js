@@ -180,7 +180,7 @@ bot.commands._nightmode = {
     }
 
     //Change the bots default settings and make sure they are loaded on launch
-    var spamWords = ['skip', 'skip pls', 'skip to gówno', 'pomińcie ten syf']; for (var i = 0; i < spamWords.length; i++) { window.bot.chatUtilities.spam.push(spamWords[i]); }
+   
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "DTVbot",
