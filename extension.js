@@ -1,4 +1,4 @@
-(function () {
+(function() {
     //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "klawisz1313";
 
@@ -31,35 +31,35 @@
          }
          }
          */
-         function tsendChat(msg) {
-        API.sendChat(msg);
-}
+        function tsendChat(msg) {
+            API.sendChat(msg);
+        }
 
-bot.commands._nightmode = {
-			command: 'nightmode',
-			rank: 'manager',
-			type: 'exact',
-			functionality: function (chat, cmd) {
-				if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    		if (!bot.commands.executable(this.rank, chat)) return void (0);
-                		else {	
-					bot.settings.timeGuard = !bot.settings.timeGuard;
-                        		bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
-                        		bot.settings.historySkip = !bot.settings.historySkip;
-                        		var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziekuje, dobranoc.';
-                        		API.sendChat(tempstr);
-                		}
-			}
-		};
+        bot.commands._nightmode = {
+            command: 'nightmode',
+            rank: 'manager',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    bot.settings.timeGuard = !bot.settings.timeGuard;
+                    bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
+                    bot.settings.historySkip = !bot.settings.historySkip;
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziekuje, dobranoc.';
+                    API.sendChat(tempstr);
+                }
+            }
+        };
 
- 
+
 
 
         bot.commands.opornyCommand = {
             command: 'oporny', //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -67,12 +67,12 @@ bot.commands._nightmode = {
                 }
             }
         };
-        
-         bot.commands.emotikonyCommand = {
+
+        bot.commands.emotikonyCommand = {
             command: 'emoty', //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -85,7 +85,7 @@ bot.commands._nightmode = {
             command: 'wumekk', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
@@ -94,11 +94,11 @@ bot.commands._nightmode = {
                 }
             }
         };
-                bot.commands.komendywadafukKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+        bot.commands.komendywadafukKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'komendy', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
@@ -112,7 +112,7 @@ bot.commands._nightmode = {
             command: 'bronks', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
@@ -126,7 +126,7 @@ bot.commands._nightmode = {
             command: 'love', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
@@ -138,11 +138,11 @@ bot.commands._nightmode = {
         };
 
 
-         bot.commands.RCSKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+        bot.commands.RCSKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'instalacja', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
@@ -151,30 +151,34 @@ bot.commands._nightmode = {
                 }
             }
         };
-        
+
         bot.commands._ban = {
-                command: 'permaban',
-                rank: 'mod',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        if (msg.length === cmd.length) return API.sendChat(subChat(bot.chat.nouserspecified, {name: chat.un}));
-                        var name = msg.substr(cmd.length + 2);
-                        var user = bot.userUtilities.lookupUserName(name);
-                        if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
-                        API.moderateBanUser(user.id, 1, API.BAN.PERMA);
-                    }
+            command: 'permaban',
+            rank: 'mod',
+            type: 'startsWith',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    var msg = chat.message;
+                    if (msg.length === cmd.length) return API.sendChat(subChat(bot.chat.nouserspecified, {
+                        name: chat.un
+                    }));
+                    var name = msg.substr(cmd.length + 2);
+                    var user = bot.userUtilities.lookupUserName(name);
+                    if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {
+                        name: chat.un
+                    }));
+                    API.moderateBanUser(user.id, 1, API.BAN.PERMA);
                 }
-            };
-            
-          bot.commands.duelCommand = {
+            }
+        };
+
+        bot.commands.duelCommand = {
             command: 'hlep', //The command to be called. With the standard command literal this would be: !bacon
             rank: 'bouncer', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -186,7 +190,7 @@ bot.commands._nightmode = {
             command: 'suku', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
@@ -195,7 +199,7 @@ bot.commands._nightmode = {
                 }
             }
         };
-            
+
 
         //i tyle :v
 
@@ -206,7 +210,7 @@ bot.commands._nightmode = {
     }
 
     //Change the bots default settings and make sure they are loaded on launch
-   
+
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "DTVbot",
@@ -271,7 +275,10 @@ bot.commands._nightmode = {
             BANNED: "https://rawgit.com/klawisz1313/basicBot-customization/master/blacklists/BANNEDlist.json"
         }
     }));
-    var spamWords = ['zwis', 'jebać zwisa', 'jebać Dissa', 'jebać Disa', 'skip', 'skip pls', 'skip to gówno', 'Suku jest spoko']; for (var i = 0; i < spamWords.length; i++) { window.bot.chatUtilities.spam.push(spamWords[i]); }
+    var spamWords = ['zwis', 'jebać zwisa', 'jebać Dissa', 'jebać Disa', 'skip', 'skip pls', 'skip to gówno', 'Suku jest spoko'];
+    for (var i = 0; i < spamWords.length; i++) {
+        window.bot.chatUtilities.spam.push(spamWords[i]);
+    }
 
     //Start the bot and extend it when it has loaded.
     $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
