@@ -114,35 +114,6 @@
             }
         };
 
-        bot.commands.bronksKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'bronks', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
-                else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Wielki człowiek, dumny obywatel Polski. Jeden z najlepszych moderatorów i administratorów. Genialny gracz lola. Po wydarzeniach z  24 stycznia 2012 roku opuścił nasze państwo (to wtedy Sosnowiec wyemigrował z Polski). Powitajmy @xBronks"); //wysyla wiadomosc
-
-                }
-            }
-        };
-        bot.commands.loveKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'love', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
-                else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat(":heart: :purple_heart: :blue_heart: :green_heart: :yellow_heart: :heart: :yellow_heart: :green_heart: :blue_heart: :purple_heart: :heart:"); //wysyla wiadomosc
-
-                }
-            }
-        };
-
 
         bot.commands.RCSKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'instalacja', //twoja nazwa komendy, bez !
@@ -189,19 +160,6 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     API.sendChat("/me @Duelmasters ma raka.");
-                }
-            }
-        };
-        bot.commands.SukuCommand = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'suku', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
-                else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me @Sukuyomi to cfeluch :nokappa: "); //wysyla wiadomosc
                 }
             }
         };
