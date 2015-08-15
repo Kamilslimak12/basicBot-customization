@@ -1,6 +1,6 @@
 (function() {
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "klawisz1313";
+    var fork = "WorstUdyrDE";
 
     //Define our function responsible for extending the bot.
     function extend() {
@@ -20,7 +20,7 @@
         for (var i = 0; i < spamWords.length; i++) {
             bot.chatUtilities.spam.push(spamWords[i]);
         }
-        
+        // ^to jest coś zjebane jednak 
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
@@ -43,7 +43,7 @@
 
         bot.commands._nightmode = {
             command: 'nightmode',
-            rank: 'manager',
+            rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
@@ -52,7 +52,7 @@
                     bot.settings.timeGuard = !bot.settings.timeGuard;
                     bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
                     bot.settings.historySkip = !bot.settings.historySkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziekuje, dobranoc.';
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, nie chciało nam się robić drugiej komendy :kappa:.';
                     API.sendChat(tempstr);
                 }
             }
