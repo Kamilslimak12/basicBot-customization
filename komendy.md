@@ -26,7 +26,6 @@ Manager
 |!refresh | | odświeża przeglądarkę na której uruchomiony jest bot |
 |!usercmdcd | X | ustaw 'czas odnowienia' komend dla zwykłych użytkowników |
 |!usercommands | | włącza/wyłącza komendy dla zwykłych użytkowników |
-|!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
 
 Bouncer+
 --------
@@ -42,7 +41,7 @@ Bouncer+
 |!move | @user (X) | przenieś użytkownika w liście oczekiwania na pozycję X, kiedy X nie jest podane przenosi na 1 pozycję |
 |!remove | @user | usuń użytkownika z listy oczekiwania |
 |!permaban | @user | banuje permanentnie użytkownika
-
+|!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
 
 Bouncer
 -------
