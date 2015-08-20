@@ -179,7 +179,7 @@
 
         //i tyle :v
 
-  var deletedWords = ['nazi', '/me basicBot v2.3.4 online!', 'basicBot v2.3.4 online!', 'hitler', '[afk]', 'faggot', 'fuck you', '!afkdisable', '!joindisable', 'niggers', 'autojoin is now disabled!', 'autorespond is now disabled!', 'http://pornhub.com', 'http://redtube.com', 'https://i.gyazo.com/a9de700a35debe6c53827e8de05b38d8.png', 'http://gyazo.com/704ed62a509bbe77a97e07c5b57316d8', 'https://i.gyazo.com/a9de700a35debe6c53827e8de05b38d8.jpg', 'https://i.gyazo.com/a9de700a35debe6c53827e8de05b38d8.gif', 'https://i.gyazo.com/a9de700a35debe6c53827e8de05b38d8.jpeg', 'i.gyazo.com/a9de700a35debe6c53827e8de05b38d8.png', 'scatman', 'brbrbrbrbr', 'kkkkkk', 'nahtzee', 'fag', 'natzi', 'natzee', 'natze', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io'];
+  var   var deletedWords = ['zwis', 'ty kurwo', 'jebać', 'jebac', 'skip', 'zwisa', 'http://pornhub.com', 'http://redtube.com', 'brbrbrbrbr', 'kkkkkk', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
