@@ -179,15 +179,7 @@
 
         //i tyle :v
 
-  var   var deletedWords = ['zwis', 'ty kurwo', 'jebać', 'jebac', 'skip', 'zwisa', 'http://pornhub.com', 'http://redtube.com', 'brbrbrbrbr', 'kkkkkk', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io'];
-        API.on(API.CHAT, function (data) {
-            for (var i = 0; i < deletedWords.length; i++) {
-                if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
-                    $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
-                    break;
-                };
-            }
-        });
+
         //Load the chat package again to account for any changes
         bot.loadChat();
 
