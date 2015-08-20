@@ -240,7 +240,7 @@
         motdEnabled: false,
         motdInterval: 10,
         motd: "Trzy szybkie poradniki jak rozwiązać problem z niedziałającym plugiem: Po pierwsze zmiana DNS na te od googla http://bit.ly/1K17w1m Jak nie pomoze: http://bit.ly/1M2wWjL http://bit.ly/1KNJkoQ",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: true,
         welcome: false,
         opLink: "http://justpaste.it/mq3j",
