@@ -104,19 +104,6 @@ var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac'
             }
         };
         
-          bot.commands.cyklCommand: {
-                command: 'cykl',
-                rank: 'mod',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        basicBot.roomUtilities.changeDJCycle();
-                    }
-                }
-            },
-
         bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'wumekk', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
