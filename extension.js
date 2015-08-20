@@ -198,7 +198,6 @@ var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac'
         botName: "DTVbot",
         language: "Polish",
         chatLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/lang/pl.json",
-        chatLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/lang/pl.json",
         scriptLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/extension.js",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
