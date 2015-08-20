@@ -196,7 +196,7 @@ var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac'
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "DTVbot",
-        language: "Polish",
+        language: "English",
         chatLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/lang/pl.json",
         scriptLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/extension.js",
         startupCap: 1, // 1-200
