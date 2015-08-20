@@ -179,7 +179,7 @@
 
         //i tyle :v
         // nie umiem zrobić żeby banowalo za "Sukuyomi jest spoko", ale kiedys sie naucze i skonczy sie dzien dziecka Kappa
-  var deletedWords = ['zwis', 'ty kurwo', 'jebać', 'jebac', 'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip', 'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń', 'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
+  var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac', 'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip', 'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń', 'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
