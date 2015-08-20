@@ -137,7 +137,7 @@
     "afkstatusreset": "\/me [@%%NAME%%] Zresetowa\u0142 czas bycia AFK u\u017cytkownika @%%USERNAME%%.",
     "inactivefor": "\/me [@%%NAME%%] @%%USERNAME%% jest nieaktywny od %%TIME%%.",
     "inactivelonger": "\/me [@%%NAME%%] @%%USERNAME%% jest d\u0142u\u017cej nieaktywny ni\u017c %%BOTNAME%% jest online.",
-    "autowoot": "\/me Polecamy RCS. Rozszerzenie daje Ci możliwoć używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj"
+    "autowoot": "\/me Polecamy RCS. Rozszerzenie daje Ci możliwoć używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj",
     "brandambassador": "\/me Ambasadorzy marki s\u0105 g\u0142osem przewodnim u\u017cytkownik\u00f3w plug.dj. Promuj\u0105 wydarzenia, anga\u017cuj\u0105 si\u0119 w spo\u0142eczno\u015bci i dziel\u0105 si\u0119 wiadomo\u015bciami o plug.dj na ca\u0142ym \u015bwiecie. Aby uzyska\u0107 wi\u0119cej informacji odwied\u017a: https:\/\/plug.dj\/ba",
     "bouncerplusrank": "\/me [@%%NAME%%] Musisz by\u0107 co najmniej menad\u017cerem aby uruchomi\u0107 Bouncer+.",
     "chatcleared": "\/me [@%%NAME%%] Wyczy\u015bci\u0142 czat.",
