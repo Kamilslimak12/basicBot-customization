@@ -160,7 +160,7 @@
     "jointime": "\/me [@%%NAMEFROM%%] @%%USERNAME%% jest w spo\u0142eczno\u015bci %%TIME%%.",
     "kickrank": "\/me [@%%NAME%%] nie mo\u017cesz u\u017cy\u0107 opcji \"kick\" na u\u017cytkowniku z t\u0105 sam\u0105 lub wy\u017csz\u0105 rang\u0105 ni\u017c ty.",
     "kick": "\/me [@%%NAME%%], @%%USERNAME%% zosta\u0142e\u015b wyrzucony z spo\u0142eczno\u015bci na %%TIME%% minut.",
-    "kill": "\/ Me Wy\u0142\u0105czanie.",
+    "kill": "\/me Wyłączono.",
     "logout": "\/me [@%%NAME%%] Wylogowa\u0142 %%BOTNAME%%",
     "rouletteleave": "\/me @%%NAME%% wyszed\u0142 z ruletki!",
     "songlink": "\/me [@%%NAME%%] Link do aktualnej piosenki: %%LINK%%",
