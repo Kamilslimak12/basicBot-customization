@@ -16,7 +16,7 @@
         bot.retrieveSettings();
         
         //Additional spam words
-var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac', 'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip', 'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń', 'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
+var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj' 'jebać', 'jebac', 'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip', 'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń', 'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
@@ -25,7 +25,7 @@ var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac'
                 };
             }
         });
-        // ^to jest coś zjebane jednak 
+        // ^dziala jak nautra chciala, az jest lekko imho przegiete
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
@@ -63,15 +63,15 @@ var deletedWords = ['zwis', 'ty kurwo', 'Sukuyomi jest spoko', 'jebać', 'jebac'
             }
         };
   
-        bot.commands.rammusmode = {
-            command: 'rammusmode',  
-            rank: 'bouncer', 
+        bot.commands.rcs = {
+            command: 'rcs',  
+            rank: 'user', 
             type: 'exact', 
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me This chat is now in Rammus mode, type :nb3ok: to continue.");
+                    API.sendChat("/me Polecamy RCS. Rozszerzenie daje Ci możliwość używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj");
                 }
             }
         };
