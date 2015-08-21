@@ -16,11 +16,11 @@
         bot.retrieveSettings();
         
         //Additional spam words
-var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
-                    'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
-                    'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
-                    'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń',
-                    'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
+        var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
+                            'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
+                            'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
+                            'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń',
+                            'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć', 'Sukuyomijestspoko'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
@@ -67,24 +67,23 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
             }
         };
   
-         bot.commands.komendadoprobraniarcs = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'rcs', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+         bot.commands.komendadoprobraniarcs = { 
+            command: 'rcs', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Polecamy RCS. Rozszerzenie daje Ci możliwość używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj"); //wysyla wiadomosc
+                    API.sendChat("/me Polecamy RCS. Rozszerzenie daje Ci możliwość używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj");
                 }
             }
         };
 
         bot.commands.opornyCommand = {
-            command: 'oporny', //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            command: 'oporny', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
@@ -95,9 +94,9 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
         };
 
         bot.commands.emotikonyCommand = {
-            command: 'emoty', //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            command: 'emoty', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
@@ -107,44 +106,41 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
             }
         };
         
-        bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'wumekk', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+        bot.commands.kolejnaKomenda = { 
+            command: 'wumekk', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); //wysyla wiadomosc
+                    API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); 
                 }
             }
         };
-        bot.commands.komendywadafukKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'komendy', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+        bot.commands.komendywadafukKomenda = { 
+            command: 'komendy', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Lista komend (ta lepsza lista): http://git.io/vO1Gx"); //wysyla wiadomosc
+                    API.sendChat("/me Lista komend (ta lepsza lista): http://git.io/vO1Gx"); 
                 }
             }
         };
 
 
-        bot.commands.RCSKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'instalacja', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+        bot.commands.RCSKomenda = { 
+            command: 'instalacja', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Poradnik przedstawiający jak zainstalować RCS na przykładzie Mozilli. W przypadku innych przeglądarek (prócz Google Chrome, na które istnieje oficjalne rozszerzenie) postępuje się analogicznie. http://i.imgur.com/2x79L18.gif"); //wysyla wiadomosc
+                    API.sendChat("/me Poradnik przedstawiający jak zainstalować RCS na przykładzie Mozilli. W przypadku innych przeglądarek (prócz Google Chrome, na które istnieje oficjalne rozszerzenie) postępuje się analogicznie. http://i.imgur.com/2x79L18.gif"); 
                 }
             }
         };
@@ -172,9 +168,9 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
         };
 
         bot.commands.duelCommand = {
-            command: 'hlep', //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'bouncer', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            command: 'hlep', 
+            rank: 'bouncer', 
+            type: 'exact', 
             functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
@@ -183,9 +179,16 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
                 }
             }
         };
+        
+        /*
+        * Czysci wszelkie instrukcje z funkcji obslugujacych dane komendy
+        * Oprocz tego przy funkcji refreshCommand pozwala odpalic ta funkcje wpisujac jedna z dwoch komend
+        * Nie musisz dziekowac, wystarczy ze zaplacisz.
+        */
+        bot.commands.reloadCommand = bot.commands.killCommand = bot.commands.logoutCommand = [];
+        bot.commands.refreshCommand.commands = ['refresh', 'reload'];
 
 
-        //i tyle :v
         // nie umiem zrobić żeby banowalo za "Sukuyomi jest spoko", ale kiedys sie naucze i skonczy sie dzien dziecka Kappa
   
 
