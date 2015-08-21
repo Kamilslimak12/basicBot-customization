@@ -202,5 +202,6 @@
     "voteratio": "\/me [@%%NAME%%] @%%USERNAME%% ~ wooty: %%WOOT%%, mehy: %%MEHS%%, \u015brednia (w\/m): %%RATIO%%.",
     "website": "\/me Zapraszamy do odwiedzenia naszej strony internetowej: %%LINK%%",
     "youtube": "\/me  [%%NAME%%] Subskrybuj nas na youtube: %%LINK%%",
-    "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M."
+    "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
+    "refresh": "\/me Odświeżanie..."
 }
