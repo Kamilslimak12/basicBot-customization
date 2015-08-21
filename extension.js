@@ -16,7 +16,11 @@
         bot.retrieveSettings();
         
         //Additional spam words
-var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj' 'jebać', 'jebac', 'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip', 'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń', 'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
+var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj' 'jebać', 'jebac',
+                    'skip', 'zwisa', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
+                    'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
+                    'przewin', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń',
+                    'pomin', 'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
