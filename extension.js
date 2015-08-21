@@ -63,20 +63,19 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj' 'jebać', 'jebac', 'skip',
             }
         };
   
-        bot.commands.rcs = {
-            command: 'rcs',  
-            rank: 'user', 
-            type: 'exact', 
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
+         bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+            command: 'rcs', //twoja nazwa komendy, bez !
+            rank: 'user', //poziom użytkownika do jej odpalenia
+            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
-                    API.sendChat("/me Polecamy RCS. Rozszerzenie daje Ci możliwość używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj");
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    API.sendChat("/me Polecamy RCS. Rozszerzenie daje Ci możliwość używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj"); //wysyla wiadomosc
                 }
             }
         };
-
-
 
         bot.commands.opornyCommand = {
             command: 'oporny', //The command to be called. With the standard command literal this would be: !bacon
