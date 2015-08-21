@@ -40,6 +40,7 @@ Bouncer+
 |!lockdown | | włącz/wyłącz czat tylko dla administracji |
 |!move | @user (X) | przenieś użytkownika w liście oczekiwania na pozycję X, kiedy X nie jest podane przenosi na 1 pozycję |
 |!remove | @user | usuń użytkownika z listy oczekiwania |
+|!deletechat | @user | usuwa wszystkie wiadomości wysłane przez danego użytkownika |
 |!permaban | @user | banuje permanentnie użytkownika |
 |!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
 |!cykl |  | włącza/wyłącza cykl DJski |
