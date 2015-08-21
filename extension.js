@@ -67,7 +67,7 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
             }
         };
   
-         bot.commands.kolejnaKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+         bot.commands.komendadoprobraniarcs = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
             command: 'rcs', //twoja nazwa komendy, bez !
             rank: 'user', //poziom użytkownika do jej odpalenia
             type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
@@ -199,7 +199,7 @@ var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "DTVbot",
-        language: "Polish",
+        language: "Polski",
         chatLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/lang/pl.json",
         scriptLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/extension.js",
         startupCap: 1, // 1-200
