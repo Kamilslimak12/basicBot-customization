@@ -186,7 +186,7 @@
         * Nie musisz dziekowac, wystarczy ze zaplacisz.
         */
         bot.commands.reloadCommand = bot.commands.killCommand = bot.commands.logoutCommand = [];
-        bot.commands.refreshCommand.commands = ['refresh', 'reload'];
+        bot.commands.refreshCommand.command = ['refresh', 'reload'];
 
 
         // nie umiem zrobić żeby banowalo za "Sukuyomi jest spoko", ale kiedys sie naucze i skonczy sie dzien dziecka Kappa
