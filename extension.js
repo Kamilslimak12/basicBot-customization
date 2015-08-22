@@ -29,8 +29,9 @@
                 };
             }
         });
-        var deletedWords = true;
-        // ^dziala jak nautra chciala, tylko jak to pod komende dac?
+        // var deletedWords = true;
+        // 1. Jak zrobic takie cos
+        // 2. Jak to pod komende dac?
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
