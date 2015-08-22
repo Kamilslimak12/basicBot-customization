@@ -29,7 +29,7 @@
                 };
             }
         });
-        var deletedWords = true;
+        // var deletedWords = true;
         // ^dziala jak nautra chciala, tylko jak to pod komende dac?
         /*
          Extend the bot here, either by calling another function or here directly.
