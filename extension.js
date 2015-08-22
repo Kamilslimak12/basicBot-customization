@@ -20,7 +20,7 @@
                             'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                             'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
                             'przewin to', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń',
-                            'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć', 'Sukuyomijestspoko'];
+                            'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
@@ -29,8 +29,8 @@
                 };
             }
         });
-        var deletedWords = false;
-        // ^dziala jak nautra chciala, az jest lekko imho przegiete
+        var deletedWords = true;
+        // ^dziala jak nautra chciala, tylko jak to pod komende dac?
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
