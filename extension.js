@@ -20,7 +20,7 @@
                             'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                             'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
                             'przewin to', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń',
-                            'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'śmiec', 'smieć'];
+                            'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'agor', 'smieć'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
