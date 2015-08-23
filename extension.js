@@ -254,7 +254,7 @@
             }
         };
         
-                   bot.commands._cycleCommand: = {
+                   bot.commands._cycleCommand = {
                 command: 'cykl',
                 rank: 'mod',
                 type: 'exact',
