@@ -116,7 +116,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    dautoDeleteImages = [];
+                    autoDeleteImages = [];
                     API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69");
                 }
             }
