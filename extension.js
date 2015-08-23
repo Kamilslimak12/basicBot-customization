@@ -76,7 +76,35 @@
         function tsendChat(msg) {
             API.sendChat(msg);
         }
-
+/*
+                bot.commands.deletedWordsoff = {
+            command: 'nazimodeoff',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    deletedWords = [];
+                    API.sendChat("/me Wyłączono SuperExtraLimitowanąWersjęNAZI czatu v69");
+                }
+            }
+        };
+        
+                        bot.commands.deletedWordson = {
+            command: 'nazimodeon',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    deletedWords = _spam;
+                    API.sendChat("/me Włączono SuperExtraLimitowanąWersjęNAZI czatu v69");
+                }
+            }
+        };
+        */
         bot.commands._nightmode = {
             command: 'nightmode',
             rank: 'mod',
