@@ -210,7 +210,8 @@
             rank: 'user', 
             type: 'exact', 
             functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (this.type === 'exact' && chat.message.length !== cmd.l
+                ngth) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
                     API.sendChat("/me Lista komend (ta lepsza lista): http://bit.ly/1Kafvh6"); 
@@ -254,7 +255,7 @@
             }
         };
         
-                   bot.commands._cycleCommand = {
+        bot.commands._cycleCommand = {
                 command: 'cykl',
                 rank: 'mod',
                 type: 'exact',
@@ -263,9 +264,9 @@
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         bot.roomUtilities.changeDJCycle();
-                    }
+                        API.sendChat("@Mycka @Mycka, pokaż bicka");
                 }
-            },
+        };
 
 
         bot.commands.pongCommand = {
