@@ -262,8 +262,8 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        bot.roomUtilities.changeDJCycle();
-                        API.sendChat("@Mycka1337 @Mycka1337, pokaż bicka");
+                        API.moderateDJCycle();
+                        API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
                 }
         }};
 
