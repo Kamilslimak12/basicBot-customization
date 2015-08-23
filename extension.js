@@ -40,8 +40,12 @@
                 };
             }
         });
+        var _obrazki = [];
+        var autoDeleteImages = [];
         
-           var autoDeleteImages = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
+           obrazki = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
+           
+           autoDeleteImages = obrazki;
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < autoDeleteImages.length; i++) {
                 if (data.message.toLowerCase().indexOf(autoDeleteImages[i]) > -1) {
@@ -86,7 +90,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     deletedWords = [];
-                    API.sendChat("/me Wyłączono SuperExtraLimitowanąWersjęNAZI czatu v69");
+                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69");
                 }
             }
         };
@@ -100,10 +104,38 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     deletedWords = _spam;
-                    API.sendChat("/me Włączono SuperExtraLimitowanąWersjęNAZI czatu v69");
+                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69");
                 }
             }
         };
+                        bot.commands.deletedImagesoff = {
+            command: 'imagesnazimodeoff',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    dautoDeleteImages = [];
+                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69");
+                }
+            }
+        };
+        
+                        bot.commands.deletedImageson = {
+            command: 'imagesnazimodeon',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    autoDeleteImages = obrazki;
+                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69");
+                }
+            }
+        };
+        
         
         bot.commands._nightmode = {
             command: 'nightmode',
