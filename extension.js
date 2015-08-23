@@ -265,7 +265,7 @@
                         bot.roomUtilities.changeDJCycle();
                         API.sendChat("@Mycka1337 @Mycka1337, pokaż bicka");
                 }
-        };
+        }};
 
 
         bot.commands.pongCommand = {
