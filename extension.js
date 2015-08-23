@@ -76,7 +76,7 @@
         function tsendChat(msg) {
             API.sendChat(msg);
         }
-/*
+
                 bot.commands.deletedWordsoff = {
             command: 'nazimodeoff',
             rank: 'mod',
@@ -104,7 +104,7 @@
                 }
             }
         };
-        */
+        
         bot.commands._nightmode = {
             command: 'nightmode',
             rank: 'mod',
