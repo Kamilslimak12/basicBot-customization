@@ -112,6 +112,5 @@ User
 |!website | | link do strony DTV |
 |!youtube | | link do kanału DTV |
 |!wumekk | | cała prawda o Wumkku |
-|!bronks | | bezsensowna komenda |
 |!love | | kolorowe serca <3 |
 
