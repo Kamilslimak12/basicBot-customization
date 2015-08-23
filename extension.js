@@ -33,7 +33,7 @@
         var deletedWords = true;
         1. Jak zrobic takie cos
         2. Jak to pod komendy dac? ↑↓
-        var autoDeleteImages = true
+        var autoDeleteImages = true;
         */
             var autoDeleteImages = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
         API.on(API.CHAT, function (data) {
