@@ -90,7 +90,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     deletedWords = [];
-                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69");
+                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69!!!");
                 }
             }
         };
@@ -104,7 +104,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     deletedWords = _spam;
-                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69");
+                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69!!!");
                 }
             }
         };
@@ -117,7 +117,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     autoDeleteImages = [];
-                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69");
+                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69!!!");
                 }
             }
         };
@@ -131,7 +131,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     autoDeleteImages = obrazki;
-                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69");
+                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69!!!");
                 }
             }
         };
