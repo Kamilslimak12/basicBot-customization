@@ -29,13 +29,8 @@
                 };
             }
         });
-        /*  
-        var deletedWords = true;
-        1. Jak zrobic takie cos
-        2. Jak to pod komendy dac? ↑↓
-        var autoDeleteImages = true;
-        */
-            var autoDeleteImages = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
+        
+           var autoDeleteImages = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < autoDeleteImages.length; i++) {
                 if (data.message.toLowerCase().indexOf(autoDeleteImages[i]) > -1) {
@@ -43,6 +38,10 @@
                 };
             }
         });
+        
+        deletedWords = true;
+        autoDeleteImages = true;
+         // Jak to pod komendy dac? ↑
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
