@@ -15,12 +15,23 @@
         //Load custom settings set below
         bot.retrieveSettings();
         
+        //Inicjuje sobie zmienne, tak w ramach bezpieczenstwa + przyzwyczajenia z C++, dzieki temu potem nie uzywam var
+        //przydatne to szczegolnie jak ktorys raz sie wywoluje podpisanie pod zmienna danych, wtedy nie mozna po raz kolejny
+        // pisac var zmienna = (...)
+        var _spam = [];
+        var deletedWords = [];
+        
         //Additional spam words
-        var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
+        
+        //tworze dodatkowa zmienna spam, zeby przy usuwaniu slownika moc go zawsze przywrocic latwo
+        _spam = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
                             'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                             'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
                             'przewin to', 'agor.io', 'http://agor.io', 'www.agor.io', 'data:image', 'pomiń',
                             'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'agor', 'smieć'];
+                            
+        //teraz zeby uruchomic czysczenie czatu do slownika trzeba dodac slowa (patrz linijka nizej)
+        deletedWords = _spam;
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
@@ -38,6 +49,13 @@
                 };
             }
         });
+        
+        //w tym stanie bot przy uruchomieniu ma filtr czatu
+        
+        //wlaczanie filtru: deletedWords = _spam;
+        //wylaczanie filtru: deletedWords = [];
+        
+        //baw sie dobrze :)
         
         /*
          Extend the bot here, either by calling another function or here directly.
@@ -70,7 +88,7 @@
                     bot.settings.timeGuard = !bot.settings.timeGuard;
                     bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
                     bot.settings.historySkip = !bot.settings.historySkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkp: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, nie chciało nam się robić drugiej komendy).';
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, nie chciało nam się robić drugiej komendy).';
                     API.sendChat(tempstr);
                 }
             }
