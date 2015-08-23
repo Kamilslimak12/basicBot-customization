@@ -39,7 +39,7 @@
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < autoDeleteImages.length; i++) {
                 if (data.message.toLowerCase().indexOf(autoDeleteImages[i]) > -1) {
-                    setTimeout(function () { $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid }) }, 10000);
+                    setTimeout(function () { $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid }) }, 15000);
                 };
             }
         });
