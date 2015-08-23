@@ -142,7 +142,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/me Poradnik przedstawiający jak zainstalować RCS na przykładzie Mozilli. W przypadku innych przeglądarek (prócz Google Chrome, na które istnieje oficjalne rozszerzenie) postępuje się analogicznie. http://i.imgur.com/2x79L18.gif"); 
+                    API.sendChat("/me Poradnik przedstawiający jak zainstalować RCS na przykładzie Mozilli. W przypadku innych przeglądarek (prócz Google Chrome, na które istnieje oficjalne rozszerzenie) postępuje się analogicznie. http://bit.ly/1Eaipl0"); 
                 }
             }
         };
