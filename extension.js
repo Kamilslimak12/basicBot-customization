@@ -264,7 +264,7 @@
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         bot.roomUtilities.changeDJCycle();
-                        API.sendChat("@Mycka @Mycka, pokaż bicka");
+                        API.sendChat("@Mycka1337 @Mycka1337, pokaż bicka");
                 }
         };
 
