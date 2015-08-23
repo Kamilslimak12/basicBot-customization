@@ -19,7 +19,7 @@
         var deletedWords = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
                             'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                             'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
-                            'przewin to', 'agor.io', 'http://agor.io', 'www.agor.io', 'https://agor.io', 'pomiń',
+                            'przewin to', 'agor.io', 'http://agor.io', 'www.agor.io', 'data:image', 'pomiń',
                             'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'agor', 'smieć'];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
