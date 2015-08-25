@@ -173,7 +173,12 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/exportchat");
+                    setTimeout(function () {
+                        API.sendChat('/exportchat');
+                        setTimeout(function () {
+                            API.sendChat('/em Dzień dziecka się skończył, mam dowody :keepo:');
+                        }, 1000);
+                    }, 1000);                    
                 }
             }
         };
