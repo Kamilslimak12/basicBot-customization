@@ -24,11 +24,9 @@
         //Additional spam words
         
         //tworze dodatkowa zmienna spam, zeby przy usuwaniu slownika moc go zawsze przywrocic latwo
-        _spam = ['zwis', 'ty kurwo', 'hój', 'huj', 'jebać', 'jebac',
-                            'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
-                            'pomińcie', 'brbrbrbrbr', 'kkkkkk', 'pomincie', 'przewińcie', 'przewincie', 'przewiń',
-                            'przewin to', 'agor.io', 'http://agor.io', 'www.agor.io', 'data:image', 'pomiń',
-                            'to gówno', 'to gowno', 'to guwno', 'śmieć', 'smiec', 'agor', 'smieć'];
+        _spam = ['zwis', 'ty kurwo', 'hój', 'huj', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
+                'pomińcie', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin to', 'data:image', 'pomiń',
+                'to gówno', 'to gowno', 'to guwno', 'agor'];
                             
         //teraz zeby uruchomic czysczenie czatu do slownika trzeba dodac slowa (patrz linijka nizej)
         deletedWords = _spam;
