@@ -26,7 +26,7 @@
         //tworze dodatkowa zmienna spam, zeby przy usuwaniu slownika moc go zawsze przywrocic latwo
         _spam = ['zwis', 'ty kurwo', 'hój', 'huj', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                 'pomińcie', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin to', 'data:image', 'pomiń',
-                'to gówno', 'to gowno', 'to guwno', 'agor'];
+                'to gówno', 'to gowno', 'to guwno', 'agor', 'HAHAHAHAHAHAHAHAHAHAHA'];
                             
         //teraz zeby uruchomic czysczenie czatu do slownika trzeba dodac slowa (patrz linijka nizej)
         deletedWords = _spam;
@@ -161,6 +161,19 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
                     API.sendChat("/me Polecamy RCS. Rozszerzenie daje Ci możliwość używanie emotikon tastycata, twitcha i innych serwisów, Autojoin który dołącza za Ciebie do kolejki, Autowoot i wiele wiele więcej. Zainstaluj, a przekonasz się sam: https://rcs.radiant.dj");
+                }
+            }
+        };
+        
+          bot.commands.ExportCzatu = { 
+            command: 'exportchat', 
+            rank: 'manager', 
+            type: 'exact', 
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
+                else {
+                    API.sendChat("/exportchat");
                 }
             }
         };
