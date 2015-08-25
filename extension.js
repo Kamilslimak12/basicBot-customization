@@ -24,7 +24,7 @@
         //Additional spam words
         
         //tworze dodatkowa zmienna spam, zeby przy usuwaniu slownika moc go zawsze przywrocic latwo
-        _spam = ['zwis', 'ty kurwo', 'hój', 'huj', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
+        _spam = ['zwis', 'ty kurwo', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                 'pomińcie', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin to', 'data:image', 'pomiń',
                 'to gówno', 'to gowno', 'to guwno', 'agor', 'HAHAHAHAHAHAHAHAHAHAHA'];
                             
@@ -80,7 +80,7 @@
         }
 
                 bot.commands.deletedWordsoff = {
-            command: 'nazimodeoff',
+            command: 'nmoff',
             rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
@@ -94,7 +94,7 @@
         };
         
                         bot.commands.deletedWordson = {
-            command: 'nazimodeon',
+            command: 'nmon',
             rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
@@ -107,7 +107,7 @@
             }
         };
                         bot.commands.deletedImagesoff = {
-            command: 'imagesnazimodeoff',
+            command: 'inmoff',
             rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
@@ -121,7 +121,7 @@
         };
         
                         bot.commands.deletedImageson = {
-            command: 'imagesnazimodeon',
+            command: 'inmon',
             rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
