@@ -26,7 +26,6 @@ Manager
 |!refresh | | odświeża przeglądarkę na której uruchomiony jest bot |
 |!usercmdcd | X | ustaw 'czas odnowienia' komend dla zwykłych użytkowników |
 |!usercommands | | włącza/wyłącza komendy dla zwykłych użytkowników |
-
 Bouncer+
 --------
 
@@ -43,7 +42,11 @@ Bouncer+
 |!deletechat | @user | usuwa wszystkie wiadomości wysłane przez danego użytkownika |
 |!permaban | @user | banuje permanentnie użytkownika |
 |!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
-|!cykl |  | włącza/wyłącza cykl DJski |
+|!cykl |  | Wyłącza cykl DJski (używacie w ostateczności) |
+|!nmon |  | Nazi Mode ON |
+|!nmoff |  | Nazi Mode OFF |
+|!inmon |  | Images Nazi Mode ON |
+|!inmoff |  | Images Nazi Mode OFF |
 
 Bouncer
 -------
