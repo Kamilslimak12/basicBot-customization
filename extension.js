@@ -20,6 +20,7 @@
         // pisac var zmienna = (...)
         var _spam = [];
         var deletedWords = [];
+        var hnd = [];
         
         //Additional spam words
         
@@ -278,15 +279,18 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var hnd = document.getElementsByClassName('off')[0].innerHTML.toLowerCase(); // now selected
-                        if (hnd === "wł" || hnd === "on") API.moderateDJCycle(false);
-                        else{
-                            if (hnd === "wył" || hnd === "off") API.moderateDJCycle(true);
-                            else API.sendChat("Nieznany błąd (!cykl)")
-                        }
+                        if ($(".off")[0] === undefined) $("#room-name").click();
+                        else {
+                            hnd = $(".off")[0].innerHTML.toLowerCase();
+                            if (hnd === "wł" || hnd === "on") API.moderateDJCycle(false);
+                            else{
+                                if (hnd === "wył" || hnd === "off") API.moderateDJCycle(true);
+                                else API.sendChat("/me Nieznany błąd (!cykl)")
+                            }
                         API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
-                }
-        }};
+                        }
+                    }
+            }};
 
 
         bot.commands.pongCommand = {
