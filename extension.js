@@ -147,7 +147,7 @@
                     bot.settings.timeGuard = !bot.settings.timeGuard;
                     bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
                     bot.settings.historySkip = !bot.settings.historySkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, nie chciało nam się robić drugiej komendy).';
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, nie chciało sie Wumkkowi robić drugiej komendy).';
                     API.sendChat(tempstr);
                 }
             }
