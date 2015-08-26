@@ -283,12 +283,12 @@
                         else {
                             hnd = $(".off")[0].innerHTML.toLowerCase();
                             if (hnd === "wł" || hnd === "on") {
-                                console.log("[Cycle] Wykryto "Wl", proba wylaczenia.");
+                                console.log("[Cycle] Wykryto \"Wl\", proba wylaczenia.");
                                 API.moderateDJCycle(false);
                             }
                             else{
                                 if (hnd === "wył" || hnd === "off") {
-                                    console.log("[Cycle] Wykryto "Wyl", proba wlaczenia.");
+                                    console.log("[Cycle] Wykryto \"Wyl\", proba wlaczenia.");
                                     API.moderateDJCycle(true);
                                 }
                                 else API.sendChat("/me Nieznany błąd (!cykl)")
