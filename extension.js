@@ -384,7 +384,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: true,
+        motdEnabled: false,
         motdInterval: 15,
         motd: "Daj nam znać jakiej muzyki słuchasz: http://strawpoll.me/5300645",
         filterChat: false,
