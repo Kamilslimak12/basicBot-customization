@@ -282,12 +282,18 @@
                         if ($(".off")[0] === undefined) $("#room-name").click();
                         else {
                             hnd = $(".off")[0].innerHTML.toLowerCase();
-                            if (hnd === "wł" || hnd === "on") API.moderateDJCycle(false);
+                            if (hnd === "wł" || hnd === "on") {
+                                console.log("[Cycle] Wykryto "Wl", proba wylaczenia.");
+                                API.moderateDJCycle(false);
+                            }
                             else{
-                                if (hnd === "wył" || hnd === "off") API.moderateDJCycle(true);
+                                if (hnd === "wył" || hnd === "off") {
+                                    console.log("[Cycle] Wykryto "Wyl", proba wlaczenia.");
+                                    API.moderateDJCycle(true);
+                                }
                                 else API.sendChat("/me Nieznany błąd (!cykl)")
                             }
-                        API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
+                        //API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
                         }
                     }
             }};
