@@ -271,7 +271,7 @@
             }
         };
         
-        bot.commands._cycleCommand = {
+        bot.commands._cycleCommand = { //bugged shit
                 command: 'cykl',
                 rank: 'mod',
                 type: 'exact',
@@ -280,21 +280,20 @@
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         if ($(".off")[0] === undefined) $("#room-name").click();
-                        else {
-                            hnd = $(".off")[0].innerHTML.toLowerCase();
-                            if (hnd === "wł" || hnd === "on") {
-                                console.log("[Cycle] Wykryto \"Wl\", proba wylaczenia.");
-                                API.moderateDJCycle(false);
-                            }
-                            else{
-                                if (hnd === "wył" || hnd === "off") {
-                                    console.log("[Cycle] Wykryto \"Wyl\", proba wlaczenia.");
-                                    API.moderateDJCycle(true);
-                                }
-                                else API.sendChat("/me Nieznany błąd (!cykl)")
-                            }
-                        //API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
+                        hnd = $(".off")[0].innerHTML.toLowerCase();
+                        if (hnd === "wł" || hnd === "on") {
+                            console.log("[Cycle] Wykryto \"Wl\", proba wylaczenia.");
+                            API.moderateDJCycle(false);
                         }
+                        else{
+                            if (hnd === "wył" || hnd === "off") {
+                                console.log("[Cycle] Wykryto \"Wyl\", proba wlaczenia.");
+                                API.moderateDJCycle(true);
+                            }
+                            else API.sendChat("/me Nieznany błąd (!cykl)")
+                        }
+                        //API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
+                        hnd = [];
                     }
             }};
 
