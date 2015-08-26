@@ -278,7 +278,12 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.moderateDJCycle();
+                        var hnd = document.getElementsByClassName('off')[0].innerHTML.toLowerCase(); // now selected
+                        if (hnd === "wł" || hnd === "on") API.moderateDJCycle(false);
+                        else{
+                            if (hnd === "wył" || hnd === "off") API.moderateDJCycle(true);
+                            else API.sendChat("Nieznany błąd (!cykl)")
+                        }
                         API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
                 }
         }};
