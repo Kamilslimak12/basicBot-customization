@@ -271,7 +271,7 @@
             }
         };
         
-        bot.commands._cycleCommand = { //bugged shit
+        bot.commands._cycleCommand = { //pierwsze uruchomienie czasem nie dziala
                 command: 'cykl',
                 rank: 'mod',
                 type: 'exact',
@@ -279,20 +279,20 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        if ($(".off")[0] === undefined) $("#room-name").click();
-                        hnd = $(".off")[0].innerHTML.toLowerCase();
-                        if (hnd === "wł" || hnd === "on") {
+                        if ($(".dj-cycle")[0] === undefined) $("#room-name").click();
+                        hnd = $(".dj-cycle")[0].className.toLowerCase();
+                        if (hnd === "dj-cycle option") {
                             console.log("[Cycle] Wykryto \"Wl\", proba wylaczenia.");
                             API.moderateDJCycle(false);
                         }
                         else{
-                            if (hnd === "wył" || hnd === "off") {
+                            if (hnd === "dj-cycle option enabled") {
                                 console.log("[Cycle] Wykryto \"Wyl\", proba wlaczenia.");
                                 API.moderateDJCycle(true);
                             }
-                            else API.sendChat("/me Nieznany błąd (!cykl)")
+                            else API.sendChat("/me Nieznany status cyklu. Może to wystąpić przy pierwszym uruchamianiu komendy. Spróbuj jej użyć jeszcze raz. Jeśli błąd się powtarza, oznacza to, iż nie komenda działa i tak na razie zostanie.")
                         }
-                        //API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
+                        API.sendChat("/me @Mycka1337 @Mycka1337, pokaż bicka");
                         hnd = [];
                     }
             }};
