@@ -147,7 +147,7 @@
                     bot.settings.timeGuard = !bot.settings.timeGuard;
                     bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
                     bot.settings.historySkip = !bot.settings.historySkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, nie chciało sie Wumkkowi robić drugiej komendy).';
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc (albo dzień dobry, mój bóg - Wumekk nie ma czasu żeby zrobić drugą komendę, albo nie jest ona potrzebna).';
                     API.sendChat(tempstr);
                 }
             }
@@ -390,7 +390,7 @@
         filterChat: false,
         etaRestriction: false,
         welcome: false,
-        opLink: "http://justpaste.it/mq3j",
+        opLink: "Zbanowne nuty od teraz znajdują się w zasadach.",
         rulesLink: "http://justpaste.it/m4co",
         themeLink: null,
         fbLink: "https://www.facebook.com/DisStream",
