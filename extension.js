@@ -319,7 +319,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    if (chat.un.toLowerCase() === '- ๔ן ฬ๏гรt υ∂уя קl -', 'GreenaSnow') API.sendChat("/woot");
+                    if (chat.un.toLowerCase() === '- ๔ן ฬ๏гรt υ∂уя קl -') API.sendChat("/woot");
                 }
             }
         };
@@ -384,13 +384,13 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 15,
-        motd: "Daj nam znać jakiej muzyki słuchasz: http://strawpoll.me/5300645",
+        motdEnabled: true,
+        motdInterval: 30,
+        motd: ":warning: Aby w pełni korzystać z możliwości naszego rooma wgraj do swojej przeglądarki internetowej RCS. https://rcs.radiant.dj/",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
-        opLink: "Zbanowne nuty od teraz znajdują się w zasadach.",
+        opLink: " :information_source: Zbanowne nuty od teraz znajdują się w zasadach.",
         rulesLink: "http://justpaste.it/m4co",
         themeLink: null,
         fbLink: "https://www.facebook.com/DisStream",
