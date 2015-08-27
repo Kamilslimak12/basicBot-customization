@@ -60,22 +60,7 @@
         
         //baw sie dobrze :)
         
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-         */
+
         function tsendChat(msg) {
             API.sendChat(msg);
         }
@@ -311,18 +296,6 @@
             }
         };
         
-          bot.commands.wootCommand = {
-            command: 'woot', 
-            rank: 'residentdj', 
-            type: 'exact', 
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                if (!bot.commands.executable(this.rank, chat)) return void(0);
-                else {
-                    if (chat.un.toLowerCase() === '- ๔ן ฬ๏гรt υ∂уя קl -' || 'GreenaSnow') API.sendChat("/woot");
-                }
-            }
-        };
         /*
         * Czysci wszelkie instrukcje z funkcji obslugujacych dane komendy
         * Oprocz tego przy funkcji refreshCommand pozwala odpalic ta funkcje wpisujac jedna z dwoch komend
