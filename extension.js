@@ -147,7 +147,7 @@
                     bot.settings.timeGuard = !bot.settings.timeGuard;
                     bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
                     bot.settings.historySkip = !bot.settings.historySkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc.)'; //I tak ma zostac bo to kuhwa nightmode. //(albo dzień dobry, mój bóg - Wumekk nie ma czasu żeby zrobić drugą komendę, albo nie jest ona potrzebna).';
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '. Dziękuję, dobranoc.'; //I tak ma zostac bo to kuhwa nightmode. //(albo dzień dobry, mój bóg - Wumekk nie ma czasu żeby zrobić drugą komendę, albo nie jest ona potrzebna).';
                     API.sendChat(tempstr);
                 }
             }
