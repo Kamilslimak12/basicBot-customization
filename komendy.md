@@ -42,7 +42,7 @@ Bouncer+
 |!deletechat | @user | usuwa wszystkie wiadomości wysłane przez danego użytkownika |
 |!permaban | @user | banuje permanentnie użytkownika |
 |!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
-|!cykl |  | Wyłącza cykl DJski (używacie w ostateczności) |
+|!cykl |  | Włącza/Wyłącza cykl DJski |
 |!nmon |  | Nazi Mode ON |
 |!nmoff |  | Nazi Mode OFF |
 |!inmon |  | Images Nazi Mode ON |
@@ -109,11 +109,10 @@ User
 |!help | | link do obrazka z pomocą do pluga |
 |!oporny | | wysyła poradnik do pluga w wersji dla opornych |
 |!link | | kiedy jesteś DJem i użyjesz tej komendy bot wyśle link do aktualnie granego utworu |
-|!op | | link do listy zbanowanych utworów |
 |!ping | | PONG! |
+|!pong | | PING! |
 |!rules | | link do zasad/regulaminu |
 |!website | | link do strony DTV |
 |!youtube | | link do kanału DTV |
 |!wumekk | | cała prawda o Wumkku |
-|!love | | kolorowe serca <3 |
 
