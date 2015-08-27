@@ -319,7 +319,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    if (chat.un.toLowerCase() === '- ๔ן ฬ๏гรt υ∂уя קl -') API.sendChat("/woot");
+                    if (chat.un.toLowerCase() === '- ๔ן ฬ๏гรt υ∂уя קl -' || 'GreenaSnow') API.sendChat("/woot");
                 }
             }
         };
