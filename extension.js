@@ -381,6 +381,6 @@
 
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/WorstUdyrDE/ZmienicSkipowanieIruletke/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/WorstUdyrDE/basicBot-customization/master/DTVbot.js", extend);
 
 }).call(this);
