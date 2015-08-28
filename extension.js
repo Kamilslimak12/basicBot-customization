@@ -360,7 +360,7 @@
         motdInterval: 30,
         motd: ":warning: Aby w pełni korzystać z możliwości naszego rooma wgraj do swojej przeglądarki internetowej RCS. https://rcs.radiant.dj/",
         filterChat: false,
-        etaRestriction: false,
+        etaRestriction: true,
         welcome: false,
         opLink: " :information_source: Zbanowne nuty od teraz znajdują się w zasadach.",
         rulesLink: "http://justpaste.it/m4co",
