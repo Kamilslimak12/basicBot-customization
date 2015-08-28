@@ -15,6 +15,38 @@
         //Load custom settings set below
         bot.retrieveSettings();
         
+                roomUtilities: {
+            rankToNumber: function (rankString) {
+                var rankInt = null;
+                switch (rankString) {
+                    case "admin":
+                        rankInt = 10;
+                        break;
+                    case "ambassador":
+                        rankInt = 7;
+                        break;
+                    case "host":
+                        rankInt = 5;
+                        break;
+                    case "cohost":
+                        rankInt = 4;
+                        break;
+                    case "manager":
+                        rankInt = 3;
+                        break;
+                    case "bouncer":
+                        rankInt = 2;
+                        break;
+                    case "residentdj":
+                        rankInt = 1;
+                        break;
+                    case "user":
+                        rankInt = 0;
+                        break;
+                }
+                return rankInt;
+            },
+        
         //Inicjuje sobie zmienne, tak w ramach bezpieczenstwa + przyzwyczajenia z C++, dzieki temu potem nie uzywam var
         //przydatne to szczegolnie jak ktorys raz sie wywoluje podpisanie pod zmienna danych, wtedy nie mozna po raz kolejny
         // pisac var zmienna = (...)
