@@ -32,13 +32,16 @@
         deletedWords = [];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
-                if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
-                    $.ajax({
-                        type: 'DELETE',
-                        url: '/_/chat/' + data.cid
-                    });
-                    break;
-                };
+                if (bot.userUtilities.getPermission(chat.uid) >= 1) return void(0);
+				else {
+					if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
+						$.ajax({
+							type: 'DELETE',
+							url: '/_/chat/' + data.cid
+						});
+						break;
+					}
+                }
             }
         });
         var _obrazki = [];
