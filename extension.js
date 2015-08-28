@@ -29,8 +29,7 @@
                 'pomińcie', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin to', 'data:image', 'pomiń',
                 'to gówno', 'to gowno', 'to guwno', 'agor', 'HAHAHAHAHAHAHAHAHAHAHA'];
                             
-        //teraz zeby uruchomic czysczenie czatu do slownika trzeba dodac slowa (patrz linijka nizej)
-        deletedWords = _spam;
+        deletedWords = [];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
@@ -42,9 +41,9 @@
         var _obrazki = [];
         var autoDeleteImages = [];
         
-           obrazki = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
+           _obrazki = ['.jpg', '.gif', '.png', 'Błędne tagi, spróbuj innych.', '[image too big]', '[error]'];
            
-           autoDeleteImages = obrazki;
+           autoDeleteImages = [];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < autoDeleteImages.length; i++) {
                 if (data.message.toLowerCase().indexOf(autoDeleteImages[i]) > -1) {
@@ -53,7 +52,7 @@
             }
         });
         
-        //w tym stanie bot przy uruchomieniu ma filtr czatu
+    
         
         //wlaczanie filtru: deletedWords = _spam;
         //wylaczanie filtru: deletedWords = [];
