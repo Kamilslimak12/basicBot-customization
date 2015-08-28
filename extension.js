@@ -153,24 +153,6 @@
                 }
             }
         };
-        
-          bot.commands.ExportCzatu = { 
-            command: 'exportchat', 
-            rank: 'manager', 
-            type: 'exact', 
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
-                if (!bot.commands.executable(this.rank, chat)) return void(0); 
-                else {
-                    setTimeout(function () {
-                        API.sendChat('/exportchat');
-                        setTimeout(function () {
-                            API.sendChat('/em Dzień dziecka się skończył, mam dowody :keepo:');
-                        }, 1000);
-                    }, 1000);                    
-                }
-            }
-        };
 
         bot.commands.opornyCommand = {
             command: 'oporny', 
@@ -298,6 +280,11 @@
                 }
             }
         };
+        
+      setInterval(function () {
+          API.sendChat('/exportchat');
+      }, 3600000);        
+        
         
         /*
         * Czysci wszelkie instrukcje z funkcji obslugujacych dane komendy
