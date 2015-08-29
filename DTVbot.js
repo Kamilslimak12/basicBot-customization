@@ -2110,7 +2110,7 @@
             },
 
             etaCommand: {
-                command: 'eta',
+                command: ['eta', 'etc'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
