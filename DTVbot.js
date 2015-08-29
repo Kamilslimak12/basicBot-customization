@@ -2133,9 +2133,12 @@
                         if (pos < 0) return API.sendChat(subChat(basicBot.chat.notinwaitlist, {name: name}));
                         if (pos == 0) return API.sendChat(subChat(basicBot.chat.youarenext, {name: name}));
                         var timeRemaining = API.getTimeRemaining();
-                        var estimateMS = ((pos + 1) * 4 * 60 + timeRemaining) * 1000;
+                        var estimateMS = ((pos + 1) * 3.78 * 60 + timeRemaining) * 1000;
                         var estimateString = basicBot.roomUtilities.msToStr(estimateMS);
                         API.sendChat(subChat(basicBot.chat.eta, {name: name, time: estimateString, position: realpos}));
+                        setTimeout(function () {
+                            API.sendChat('Sobie teraz to na sekundy przelicz :keepo: Albo zainstaluj RCS i nie przeszkadzaj. Tu się pracuje. Trzymaj link bo pewnie nie będzie Ci się chciało szukać http://rcs.radiant.dj');
+                        }, 1000);                        
                     }
                 }
             },
