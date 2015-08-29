@@ -283,7 +283,7 @@
         
       setInterval(function () {
           API.sendChat('/exportchat');
-      }, 3600000);        
+      }, 1800000);        
         
         
         /*
