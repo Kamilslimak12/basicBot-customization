@@ -2036,57 +2036,7 @@
                     }
                 }
             },
-
-            /*
-
-            // This does not work anymore.
-
-            deletechatCommand: {
-                command: 'deletechat',
-                rank: 'mod',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
-                        var name = msg.substring(cmd.length + 2);
-                        var user = basicBot.userUtilities.lookupUserName(name);
-                        if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
-                        var chats = $('.from');
-                        var message = $('.message');
-                        var emote = $('.emote');
-                        var from = $('.un.clickable');
-                        for (var i = 0; i < chats.length; i++) {
-                            var n = from[i].textContent;
-                            if (name.trim() === n.trim()) {
-
-                                // var messagecid = $(message)[i].getAttribute('data-cid');
-                                // var emotecid = $(emote)[i].getAttribute('data-cid');
-                                // API.moderateDeleteChat(messagecid);
-
-                                // try {
-                                //     API.moderateDeleteChat(messagecid);
-                                // }
-                                // finally {
-                                //     API.moderateDeleteChat(emotecid);
-                                // }
-
-                                if (typeof $(message)[i].getAttribute('data-cid') == "undefined"){
-                                    API.moderateDeleteChat($(emote)[i].getAttribute('data-cid')); // works well with normal messages but not with emotes due to emotes and messages are seperate.
-                                } else {
-                                    API.moderateDeleteChat($(message)[i].getAttribute('data-cid'));
-                                }
-                            }
-                        }
-                        API.sendChat(subChat(basicBot.chat.deletechat, {name: chat.un, username: name}));
-                    }
-                }
-            },
-
-            */
-
+            
             deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
