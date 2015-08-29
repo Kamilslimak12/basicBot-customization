@@ -32,7 +32,7 @@
         deletedWords = [];
         API.on(API.CHAT, function (data) {
             for (var i = 0; i < deletedWords.length; i++) {
-                if (bot.userUtilities.getPermission(chat.uid) >= 'residentdj') return void(0);
+                if (bot.userUtilities.getPermission(chat.uid) >= residentdj) return void(0);
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
                     $.ajax({
                         type: 'DELETE',
