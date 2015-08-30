@@ -1004,12 +1004,12 @@
                             if (API.getMedia().cid !== newMedia.cid) {
                                 return void(0);
                             } else {
+                                API.sendChat("Minęło 6 minut, pomijam...");
                                 return API.moderateForceSkip();
                             }
                         }, 360000);
                     }
- 
-                }
+                 }
             }, 2000);
             var format = obj.media.format;
             var cid = obj.media.cid;
