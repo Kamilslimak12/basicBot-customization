@@ -281,6 +281,201 @@
             }
         };
         
+        //Testowo !slots, Thanks RAWRMedusa
+        
+          function spinSlots() {
+            var slotArray = [':lemon:',
+                             ':tangerine:', 
+                             ':strawberry:', 
+                             ':pineapple:', 
+                             ':apple:', 
+                             ':grapes:', 
+                             ':watermelon:', 
+                             ':cherries:', 
+                             ':green_heart:', 
+                             ':bell:', 
+                             ':gem:', 
+                             ':slot_seven:'];
+            var slotValue = [1.5, 
+                             2, 
+                             2.5, 
+                             3, 
+                             3.5, 
+                             4, 
+                             4.5, 
+                             5, 
+                             5.5, 
+                             6, 
+                             6.5, 
+                             7];    
+            var rand =  Math.floor(Math.random() * (slotArray.length));                
+            return [slotArray[rand], slotValue[rand]]; 
+        }
+        
+        function spinOutcome(bet) {
+            var winnings;
+            var outcome1 = spinSlots(); 
+            var outcome2 = spinSlots(); 
+            var outcome3 = spinSlots();   
+            
+            //Fix bet if blank
+            if (bet == null || bet == "" || bet == " " || bet == "!slot" || bet == "!slots") {
+                bet = 1;
+            }
+
+            //Determine Winnings
+            if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
+                winnings = Math.round(bet * outcome1[1]);
+            }
+            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
+                winnings = Math.round(bet * (.3 * outcome1[1]));
+            }
+            else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.35 * outcome1[1]));
+            }
+            else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
+                winnings = Math.round(bet * (.25 * outcome2[1]));
+            }
+            else{
+                winnings = 0;  
+            }
+                            
+             return [outcome1[0], outcome2[0], outcome3[0], winnings];                      
+        }
+        
+        function checkTokens(bet, user) {
+             var tokensPreBet;
+             var tokensPostBet;
+             var checkUser = false;
+             var validBet = true;
+             var tokens;
+             
+             $.ajax({
+                     type: 'GET',
+                     dataType: 'json',
+                     url: 'https://rawgit.com/WorstUdyrDE/basicBot-customization/master/tokens.json',
+                     data: {get_param: "value"},
+                     success: function (data) {
+                         tokens = JSON.parse('https://rawgit.com/WorstUdyrDE/basicBot-customization/master/tokens.json'); 
+                         for (i=0; i < tokens.length; i++) {
+                            if (tokens[i].username == user) {
+                                checkUser = true;
+                                tokensPreBet = tokens[i].number;
+                            }
+                        }
+                        
+                    }
+             });
+             
+                    
+             if (checkUser == false) {
+                  //tokens.push(username: user, number: 0);
+                  tokensPreBet = 0;
+             } 
+             
+             if (bet > tokensPreBet) {
+                  validBet = false;
+                  tokensPostBet = tokensPreBet;
+             }
+             else if (tokensPostBet < 0) {
+                  validBet = false;
+                  tokensPostBet = tokensPreBet;
+             }
+             else {
+                  tokensPostBet = tokensPreBet - bet;
+             }
+
+             for (i=0; i < tokens.length; i++) {
+                  if (tokens[i].username == user) {
+                     tokens[i].number = tokensPostBet;
+                  }
+             }
+             return tokensPreBet, tokensPostBet, validBet;
+        }
+        
+        function slotWinnings(winnings, user) {
+            var totalTokens;        
+            $.ajax({
+                     type: 'GET',
+                     dataType: 'json',
+                     url: 'https://rawgit.com/WorstUdyrDE/basicBot-customization/master/tokens.json',
+                     data: {get_param: "value"},
+                     success: function (data) {
+                         var tokens = JSON.parse('https://rawgit.com/WorstUdyrDE/basicBot-customization/master/tokens.json'); 
+                         for (i=0; i < tokens.length; i++) {
+                            if (tokens[i].username == user) {
+                            tokens[i].number = tokens[i].number + winnings;
+                            totalTokens = tokens[i].number;
+                         }
+                     }
+                        
+                 }
+             });
+            return totalTokens;
+        }
+
+        //slots
+        bot.commands.slotsCommand = { 
+            command: ['slots', 'slot'],  //The command to be called. With the standard command literal this would be: !slots
+            rank: 'user', 
+            type: 'startsWith',  
+            functionality: function (chat, cmd) { 
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); 
+                if (!bot.commands.executable(this.rank, chat)) return void (0); 
+                else { 
+                    var msg = chat.message; 
+					var space = msg.indexOf(' ');
+                    var player = chat.un; 
+                    var bet = msg.substring(space + 1);
+                    bet = Math.round(bet);      
+                    var updatedTokens;
+                                   
+                    //Check Users TOKEn count...
+                    var playerTokens; // = checkTokens(bet, player);
+                    
+                    //Remove this when done testing!!!!!!
+                    playerTokens = bet;
+                    
+                    if (bet > playerTokens[0]) { 
+                        return API.sendChat("/me @" + chat.un + " tries to bet " + bet + " TOKEns at the ChemSlots, but only has " + playerTokens[0] + " TOKEns! How embarassing."); 
+                    } 
+                    else if (bet == 0) { 
+                        return API.sendChat("/me @" + chat.un + " tries to bet " + bet + " TOKEns at the ChemSlots... you can't play for free! Cheap skate."); 
+                    }
+                    else {
+                        var outcome = spinOutcome(bet);
+                        //updatedTokens = slotWinnings(outcome[3], player);
+                    }
+                    
+                    //Display Slots
+                    if (space === -1 || bet == 1) { 
+                        //Start Slots
+                        API.sendChat("/me @" + chat.un + " bets one TOKEn at the ChemSlots, and pulls the handle to spin... " + chat.un + " watches the ChemSlots spin.");
+                        setTimeout(function() {API.sendChat("/me  It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
+                    } 
+                    else if (bet > 1) { 
+                        //Start Slots
+                        API.sendChat("/me @" + chat.un + " bets " + bet + " TOKEns at the ChemSlots, and pulls the handle to spin... " + chat.un + " watches the ChemSlots spin.");
+                        setTimeout(function() {API.sendChat("/me It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
+                    } 
+                    else {
+                        return false; 
+                    }
+                         
+                     //Display Outcome
+                    if (outcome[3] == 0) {
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", tough luck, loser! You didn't win anything. I hear gambling is addictive... want to try again?")}, 7000); 
+                    }
+                    else if (outcome[3] == (bet * 7)) {
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you hit the JACKPOT and won " + outcome[3] + " TOKEns! Lucky number seven strikes again -- Don't spend them all in one place!")}, 7000);   
+                    }
+                    else {
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you're a WINNER! You've won " + outcome[3] + " TOKEns! How about another spin?")}, 7000);
+                    }
+                } 
+            } 
+        }; 
+        
       setInterval(function () {
           API.sendChat('/exportchat');
       }, 1800000);        
