@@ -326,16 +326,6 @@
             //Determine Winnings
             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
-            }
-            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
-                winnings = Math.round(bet * (.3 * outcome1[1]));
-            }
-            else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.35 * outcome1[1]));
-            }
-            else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.25 * outcome2[1]));
-            }
             else{
                 winnings = 0;  
             }
@@ -450,13 +440,11 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " bets one TOKEn at the ChemSlots, and pulls the handle to spin... " + chat.un + " watches the ChemSlots spin.");
-                        setTimeout(function() {API.sendChat("/me  It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + " wylosowałeś: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " bets " + bet + " TOKEns at the ChemSlots, and pulls the handle to spin... " + chat.un + " watches the ChemSlots spin.");
-                        setTimeout(function() {API.sendChat("/me It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + " wylosowałeś: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else {
                         return false; 
@@ -464,13 +452,13 @@
                          
                      //Display Outcome
                     if (outcome[3] == 0) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", tough luck, loser! You didn't win anything. I hear gambling is addictive... want to try again?")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", tough luck, loser! You didn't win anything. I hear gambling is addictive... want to try again?")}, 2000); 
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you hit the JACKPOT and won " + outcome[3] + " TOKEns! Lucky number seven strikes again -- Don't spend them all in one place!")}, 7000);   
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you hit the JACKPOT and won " + outcome[3] + " TOKEns! Lucky number seven strikes again -- Don't spend them all in one place!")}, 2000);   
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you're a WINNER! You've won " + outcome[3] + " TOKEns! How about another spin?")}, 7000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you're a WINNER! You've won " + outcome[3] + " TOKEns! How about another spin?")}, 2000);
                     }
                 } 
             } 
@@ -489,10 +477,6 @@
         bot.commands.reloadCommand = bot.commands.killCommand = bot.commands.logoutCommand = [];
         bot.commands.refreshCommand.command = ['refresh', 'reload'];
 
-
-        // nie umiem zrobić żeby banowalo za "Sukuyomi jest spoko", ale kiedys sie naucze i skonczy sie dzien dziecka Kappa
-  
-
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -506,9 +490,9 @@
         language: "Polski",
         chatLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/lang/pl.json",
         scriptLink: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/extension.js",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupCap: 1,
+        startupVolume: 0, 
+        startupEmoji: false,
         autowoot: false,
         smartSkip: false,
         cmdDeletion: true,
