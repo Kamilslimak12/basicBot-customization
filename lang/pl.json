@@ -80,7 +80,7 @@
     "adding": "\/me Dodano @%%NAME%% do kolejki. Aktualna kolejka: %%POSITION%%.",
     "usernotfound": "\/me U\u017cytkownik nie zosta\u0142 znaleziony.",
     "notdisconnected": "\/me @%%NAME%% nie roz\u0142\u0105czy\u0142 si\u0119 od kiedy tu jestem.",
-    "noposition": "\/me Ostatnia pozycja nie jest znana. Lista oczekiwania musia\u0142a by\u0107 zaktualizowana co najmniej raz od zarejestrowania ostatniej pozycji u\u017cytkownika.",
+    "noposition": "\/me Ostatnia pozycja nie jest znana.",
     "toolongago": "\/me @%%NAME%%'s twoje ostanie roz\u0142\u0105czenie (DC lub wyj\u015bcie) by\u0142o zbyt dawno temu: %%TIME%%.",
     "valid": "\/me @%%NAME%% roz\u0142\u0105czy\u0142 si\u0119 %%TIME%% temu i powinien by\u0107 na pozycji %%POSITION%%.",
     "warning1": "\/me @%%NAME%%, jeste\u015b afk od %%TIME%%, prosz\u0119 odpowiedz w ci\u0105gu 2 minut albo zostaniesz usuni\u0119ty z listy oczekiwania.",
