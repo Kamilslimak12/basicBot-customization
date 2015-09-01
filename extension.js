@@ -450,11 +450,11 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        setTimeout(function() {API.sendChat("/me  It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
+                        setTimeout(function() {API.sendChat("/me  Wylosowałeś: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        setTimeout(function() {API.sendChat("/me It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
+                        setTimeout(function() {API.sendChat("/me Wylosowałeś: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else {
                         return false; 
@@ -462,13 +462,13 @@
                          
                      //Display Outcome
                     if (outcome[3] == 0) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", przegryw! Nie wygałeś nic... Chcesz spróbować ponownie?")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", przegryw! Nie wygałeś nic... Chcesz spróbować ponownie?")}, 2000); 
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", JACKPOT!!! Wygrywasz " + outcome[3] + " tokenów. Tylko nie przepierdol na głupoty :keepo:")}, 7000);   
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", JACKPOT!!! Wygrywasz " + outcome[3] + " tokenów. Tylko nie przepierdol na głupoty :keepo:")}, 2000);   
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", Wygrałeś " + outcome[3] + " tokenów. Może zagrasz jeszcze raz?")}, 7000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", Wygrałeś " + outcome[3] + " tokenów. Może zagrasz jeszcze raz?")}, 2000);
                     }
                 } 
             } 
