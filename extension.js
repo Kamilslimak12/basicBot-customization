@@ -281,7 +281,7 @@
             }
         };
         
-        /* Testowo !slots, Thanks RAWRMedusa */
+        /* Testowo !slots, Thanks RAWRMedusa 
         
           function spinSlots() {
             var slotArray = [':lemon:',
@@ -473,7 +473,7 @@
                 } 
             } 
         }; 
-       
+       */
       setInterval(function () {
           API.sendChat('/exportchat');
       }, 1800000);        
