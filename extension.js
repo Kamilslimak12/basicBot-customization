@@ -284,30 +284,8 @@
         /* Testowo !slots, Thanks RAWRMedusa  */
         
           function spinSlots() {
-            var slotArray = [':lemon:',
-                             ':tangerine:', 
-                             ':strawberry:', 
-                             ':pineapple:', 
-                             ':apple:', 
-                             ':grapes:', 
-                             ':watermelon:', 
-                             ':cherries:', 
-                             ':green_heart:', 
-                             ':bell:', 
-                             ':gem:', 
-                             ':slot_seven:'];
-            var slotValue = [1.5, 
-                             2, 
-                             2.5, 
-                             3, 
-                             3.5, 
-                             4, 
-                             4.5, 
-                             5, 
-                             5.5, 
-                             6, 
-                             6.5, 
-                             7];    
+            var slotArray = [':lemon:'];
+            var slotValue = [1.5];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
