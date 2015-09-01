@@ -370,11 +370,11 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        setTimeout(function() {API.sendChat("/me  Wylosowano: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        setTimeout(function() {API.sendChat("/me Wylosowano: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else {
                         return false; 
