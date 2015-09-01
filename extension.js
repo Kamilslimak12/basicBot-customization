@@ -281,7 +281,7 @@
             }
         };
         
-        /* Testowo !slots, Thanks RAWRMedusa
+        /* Testowo !slots, Thanks RAWRMedusa */
         
           function spinSlots() {
             var slotArray = [':lemon:',
@@ -437,10 +437,10 @@
                     playerTokens = bet;
                     
                     if (bet > playerTokens[0]) { 
-                        return API.sendChat("/me @" + chat.un + " tries to bet " + bet + " TOKEns at the ChemSlots, but only has " + playerTokens[0] + " TOKEns! How embarassing."); 
+                        return API.sendChat("/me @" + chat.un + " Masz za mało tokenów... Frajer XD "); 
                     } 
                     else if (bet == 0) { 
-                        return API.sendChat("/me @" + chat.un + " tries to bet " + bet + " TOKEns at the ChemSlots... you can't play for free! Cheap skate."); 
+                        return API.sendChat("/me @" + chat.un + " Masz za mało tokenów... Frajer XD "); 
                     }
                     else {
                         var outcome = spinOutcome(bet);
@@ -450,13 +450,11 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " bets one TOKEn at the ChemSlots, and pulls the handle to spin... " + chat.un + " watches the ChemSlots spin.");
-                        setTimeout(function() {API.sendChat("/me  It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
+                        setTimeout(function() {API.sendChat("/me  It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " bets " + bet + " TOKEns at the ChemSlots, and pulls the handle to spin... " + chat.un + " watches the ChemSlots spin.");
-                        setTimeout(function() {API.sendChat("/me It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
+                        setTimeout(function() {API.sendChat("/me It finally stops on: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
                     } 
                     else {
                         return false; 
@@ -464,18 +462,18 @@
                          
                      //Display Outcome
                     if (outcome[3] == 0) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", tough luck, loser! You didn't win anything. I hear gambling is addictive... want to try again?")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", przegryw! Nie wygałeś nic... Chcesz spróbować ponownie?")}, 7000); 
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you hit the JACKPOT and won " + outcome[3] + " TOKEns! Lucky number seven strikes again -- Don't spend them all in one place!")}, 7000);   
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", JACKPOT!!! Wygrywasz " + outcome[3] + " tokenów. Tylko nie przepierdol na głupoty :keepo:")}, 7000);   
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", you're a WINNER! You've won " + outcome[3] + " TOKEns! How about another spin?")}, 7000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", Wygrałeś " + outcome[3] + " tokenów. Może zagrasz jeszcze raz?")}, 7000);
                     }
                 } 
             } 
         }; 
-        */
+       
       setInterval(function () {
           API.sendChat('/exportchat');
       }, 1800000);        
