@@ -327,15 +327,6 @@
             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
             }
-            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
-                winnings = Math.round(bet * (.3 * outcome1[1]));
-            }
-            else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.35 * outcome1[1]));
-            }
-            else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.25 * outcome2[1]));
-            }
             else{
                 winnings = 0;  
             }
