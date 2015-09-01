@@ -350,22 +350,10 @@
                     bet = Math.round(bet);      
                     var updatedTokens;
                                    
-                    //Check Users TOKEn count...
-                    var playerTokens; // = checkTokens(bet, player);
-                    
-                    //Remove this when done testing!!!!!!
-                    playerTokens = bet;
-                    
-                    if (bet > playerTokens[0]) { 
-                        return API.sendChat("/me @" + chat.un + " Masz za mało tokenów... Frajer XD "); 
-                    } 
-                    else if (bet == 0) { 
-                        return API.sendChat("/me @" + chat.un + " Masz za mało tokenów... Frajer XD "); 
-                    }
-                    else {
+
                         var outcome = spinOutcome(bet);
                         //updatedTokens = slotWinnings(outcome[3], player);
-                    }
+                    
                     
                     //Display Slots
                     if (space === -1 || bet == 1) { 
