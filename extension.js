@@ -326,7 +326,7 @@
             //Determine Winnings
             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
-                bot.userUtilities.moveUser(user.id, 1);
+                API.moderateMoveDJ(chat.id, 1);
             }
             else{
                 winnings = 0;  
