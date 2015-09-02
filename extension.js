@@ -283,11 +283,31 @@
         
         /* Testowo !slots, Thanks RAWRMedusa */
         
-            function spinSlots() {
+    function spinSlots() {
             var slotArray = [':lemon:',
-                             ':tangerine:'];
+                             ':tangerine:', 
+                             ':strawberry:', 
+                             ':pineapple:', 
+                             ':apple:', 
+                             ':grapes:', 
+                             ':watermelon:', 
+                             ':cherries:', 
+                             ':green_heart:', 
+                             ':bell:', 
+                             ':gem:', 
+                             ':slot_seven:'];
             var slotValue = [1.5, 
-                             2];    
+                             2, 
+                             2.5, 
+                             3, 
+                             3.5, 
+                             4, 
+                             4.5, 
+                             5, 
+                             5.5, 
+                             6, 
+                             6.5, 
+                             7];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
@@ -307,7 +327,7 @@
             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
                setTimeout(function () {
-                   API.sendChat("OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
+                   API.sendChat("/me @" + chat.un + "OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
                    API.moderateMoveDJ(chat.id, 1);
                }, 2000);
             }
@@ -327,6 +347,13 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); 
                 if (!bot.commands.executable(this.rank, chat)) return void (0); 
                 else { 
+                	this.lastSlots = null;                       
+			var u = bot.userUtilities.lookupUser(chat.uid);
+                        if (u.lastSlots !== null && (Date.now() - u.lastSlots) < 1 * 5 * 60 * 1000) {
+                            API.moderateDeleteChat(chat.cid);
+                            return void (0);
+                        }
+                        else {u.lastSlots = Date.now(); 
                     var msg = chat.message; 
 					var space = msg.indexOf(' ');
                     var player = chat.un; 
@@ -351,10 +378,11 @@
                     else {
                         return false; 
                     }
-                
+                }
               }
             } 
         };  
+        	
         	
       
       setInterval(function () {
