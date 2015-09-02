@@ -93,6 +93,7 @@ User
 
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
+|!slot |  | Zagraj w Sloty. Możesz wygrać przerzucenie na 1. miejsce |
 |!8ball | (message) | zadaj botowi pytanie. |
 |!autowoot | | wysyła link do RCS |
 |!instalacja | | poradnik jak zainstalować RCS |
