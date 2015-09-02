@@ -326,7 +326,10 @@
             //Determine Winnings
             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
-                API.moderateMoveDJ(chat.id, 1);
+               setTimeout(function () {
+                   API.sendChat("OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
+                   API.moderateMoveDJ(chat.id, 1);
+               }, 2000);
             }
             else{
                 winnings = 0;  
@@ -366,11 +369,11 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + " spróbuj ponownie za 5 minut.")}, 1000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2])}, 1000);
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + " spróbuj ponownie za 5 minut.")}, 1000);
                     } 
                     else {
                         return false; 
