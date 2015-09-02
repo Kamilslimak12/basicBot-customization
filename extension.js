@@ -399,10 +399,21 @@
         bot.commands.refreshCommand.command = ['refresh', 'reload'];
 
 	//Prosze o nie ruszanie tego
+	var hostOnline = true;
 	API.on(API.ADVANCE, function() {
-		x = API.getMedia().author + " - " + API.getMedia().title + ", obecny dj: " + API.getDJ().username;
-		x = x.replace("&", "%26"); x = x.replace("#", "%23");
-		$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream="+API.getHost().username+"&dane="+x+"\" width=\"1\" height=\"1\">");
+		if (API.getHost() !== undefined) {
+			x = API.getMedia().author + " - " + API.getMedia().title + ", obecny dj: " + API.getDJ().username;
+			x = x.replace("&", "%26"); x = x.replace("#", "%23");
+			$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream="+API.getHost().username+"&dane="+x+"\" width=\"1\" height=\"1\">");	
+			hostOnline = true;
+		}
+		else {
+			if (hostOnline) {
+				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=DisDesu"&dane=\" width=\"1\" height=\"1\">");
+				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=KiaraStream"&dane=\" width=\"1\" height=\"1\">");
+				hostOnline = false;
+			}
+		}
 	});
 
 
