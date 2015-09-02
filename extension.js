@@ -281,7 +281,7 @@
             }
         };
         
-        /* Testowo !slots, Thanks RAWRMedusa 
+        /* Testowo !slots, Thanks RAWRMedusa */
         
             function spinSlots() {
             var slotArray = [':lemon:',
@@ -344,6 +344,13 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); 
                 if (!bot.commands.executable(this.rank, chat)) return void (0); 
                 else { 
+                	this.lastSlots = null;                       
+			var u = bot.userUtilities.lookupUser(chat.uid);
+                        if (u.lastSlots !== null && (Date.now() - u.lastSlots) < 1 * 5 * 60 * 1000) {
+                            API.moderateDeleteChat(chat.cid);
+                            return void (0);
+                        }
+                        else {u.lastSlots = Date.now(); 
                     var msg = chat.message; 
 					var space = msg.indexOf(' ');
                     var player = chat.un; 
@@ -368,10 +375,11 @@
                     else {
                         return false; 
                     }
-                } 
+                }
+              }
             } 
         };  
-        	*/
+        	
       
       setInterval(function () {
           API.sendChat('/exportchat');
