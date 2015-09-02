@@ -398,6 +398,14 @@
         bot.commands.reloadCommand = bot.commands.killCommand = bot.commands.logoutCommand = [];
         bot.commands.refreshCommand.command = ['refresh', 'reload'];
 
+	//Prosze o nie ruszanie tego
+	API.on(API.ADVANCE, function() {
+		x = API.getMedia().author + " " + API.getMedia().title + ", obecny dj: " + API.getDJ().username;
+		x = x.replace("&", "%26"); x = x.replace("#", "%23");
+		$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream="+API.getHost().username+"&dane="+x+"\" width=\"1\" height=\"1\">");
+	});
+
+
         //Load the chat package again to account for any changes
         bot.loadChat();
 
