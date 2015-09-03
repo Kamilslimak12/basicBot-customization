@@ -409,9 +409,8 @@
 		}
 		else {
 			if (hostOnline) {
-				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=DisDesu"&dane=\" width=\"1\" height=\"1\">");
-				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=KiaraStream"&dane=\" width=\"1\" height=\"1\">");
-				hostOnline = false;
+				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=DisDesu&dane=\" width=\"1\" height=\"1\">");
+				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=KiaraStream&dane=\" width=\"1\" height=\"1\">");				hostOnline = false;
 			}
 		}
 	});
