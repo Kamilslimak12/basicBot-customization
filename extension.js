@@ -1,5 +1,7 @@
 (function() {
-    //Change this to your GitHub username so you don't have to modify so many things.
+
+   //Goodbye cruel world ~Wumekk
+   //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "WorstUdyrDE";
 
     //Define our function responsible for extending the bot.
@@ -312,7 +314,7 @@
             return [slotArray[rand], slotValue[rand]]; 
         }
         
-        function spinOutcome(bet) {
+        function spinOutcome(bet, chat) {
             var winnings;
             var outcome1 = spinSlots(); 
             var outcome2 = spinSlots(); 
@@ -327,8 +329,8 @@
             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
                setTimeout(function () {
-                   API.sendChat("/me @" + chat.un + "OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
-                   API.moderateMoveDJ(chat.id, 1);
+                   API.sendChat("/me @" + chat.un + " OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
+                   API.moderateMoveDJ(chat.uid, 1);
                }, 2000);
             }
             else{
@@ -362,7 +364,7 @@
                     var updatedTokens;
                                    
 
-                        var outcome = spinOutcome(bet);
+                        var outcome = spinOutcome(bet, chat);
                         //updatedTokens = slotWinnings(outcome[3], player);
                     
                     
@@ -410,7 +412,8 @@
 		else {
 			if (hostOnline) {
 				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=DisDesu&dane=\" width=\"1\" height=\"1\">");
-				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=KiaraStream&dane=\" width=\"1\" height=\"1\">");				hostOnline = false;
+				$("#twitter-menu").html("<img src=\"http://37.233.103.35/djmagic/wtyczka_dj.php?stream=KiaraStream&dane=\" width=\"1\" height=\"1\">");				
+                hostOnline = false;
 			}
 		}
 	});
@@ -482,9 +485,9 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/klawisz1313/basicBot-customization/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/klawisz1313/basicBot-customization/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/klawisz1313/basicBot-customization/master/blacklists/BANNEDlist.json"
+            NSFW: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/blacklists/NSFWlist.json",
+            OP: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/WorstUdyrDE/basicBot-customization/master/blacklists/BANNEDlist.json"
         }
     }));
 
