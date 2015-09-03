@@ -191,6 +191,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
                     API.sendChat("/me @Wumekk jest miloscia, @Wumekk jest zyciem <3"); 
+                    API.sendChat("/lovespam"); 
                 }
             }
         };
