@@ -398,7 +398,7 @@
         bot.commands.reloadCommand = bot.commands.killCommand = bot.commands.logoutCommand = [];
         bot.commands.refreshCommand.command = ['refresh', 'reload'];
 
-	//Prosze o nie ruszanie tego
+	//Prosze o nie ruszanie tego - Wumekk
 	var hostOnline = true;
 	API.on(API.ADVANCE, function() {
 		if (API.getHost() !== undefined) {
@@ -414,7 +414,7 @@
 			}
 		}
 	});
-
+	//Dodaje dodatkowy tekst aby ulatwic #reload
 
         //Load the chat package again to account for any changes
         bot.loadChat();
