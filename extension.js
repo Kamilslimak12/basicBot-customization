@@ -383,14 +383,7 @@
                 }
               }
             } 
-        };  
-        	
-        	
-      
-      setInterval(function () {
-          API.sendChat('/exportchat');
-      }, 1800000);        
-        
+        }; 
         
         /*
         * Czysci wszelkie instrukcje z funkcji obslugujacych dane komendy
