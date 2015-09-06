@@ -97,8 +97,8 @@ User
 |!8ball | (message) | zadaj botowi pytanie. |
 |!autowoot | | wysyła link do RCS |
 |!instalacja | | poradnik jak zainstalować RCS |
-|!emoji | | link do listy emotikon |
-|!emoty | | emotikony jakie zyskuje się z dodatkiem RCS |
+|!emoji | | emotikony jakie zyskuje się z dodatkiem RCS |
+|!emoty | | emotikony jakie zostały dodane w naszej customizacji rooma |
 |!ba | | przedstawia rangę "Ambasador Marki" |
 |!komendy | | wysyła link do tych komend |
 |!commands | | wysyła link do oryginalnych komend |
