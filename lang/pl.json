@@ -149,7 +149,7 @@
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
     "cycleguardtime": "\/me [@%%NAME%%] Stra\u017cnik cyklu jest ustawiony na %%TIME%% minut.",
     "dclookuprank": "\/me [@%%NAME%%] Tylko bramkarze wzwy\u017c mog\u0105 u\u017cy\u0107 komendy dc dla innych.",
-    "emojilist": "\/me Lista emotikon: %%LINK%%",
+    "emojilist": "\/me Lista emotikon jakie uzyskujemy z RCS: %%LINK%%",
     "notinwaitlist": "\/me @%%NAME%%, nie jeste\u015b na li\u015bcie oczekiwania.",
     "youarenext": "\/me @%%NAME%%, b\u0119dziesz DJem po tym utworze.",
     "youaredj": "\/me @%%NAME%%, w\u0142a\u015bnie jeste\u015b DJem.",
