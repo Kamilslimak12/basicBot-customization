@@ -2063,7 +2063,7 @@
 
 
             emojiCommand: {
-                command: 'emoji',
+                command: ['emoji', 'emoty'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
