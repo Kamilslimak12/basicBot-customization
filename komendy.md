@@ -109,6 +109,7 @@ User
 |!help | | link do obrazka z pomocą do pluga |
 |!oporny | | wysyła poradnik do pluga w wersji dla opornych |
 |!link | | kiedy jesteś DJem i użyjesz tej komendy bot wyśle link do aktualnie granego utworu |
+|!customemotes | | lista emotikon z naszej customizacji (tylko dla osób z RCS) |
 |!ping | | PONG! |
 |!pong | | PING! |
 |!rules | | link do zasad/regulaminu |
