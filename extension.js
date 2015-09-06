@@ -271,7 +271,7 @@
         };
         
           bot.commands.cussstomeemotes = { 
-            command: 'customemotes', 
+            command: ['customemotes', 'ce'], 
             rank: 'user', 
             type: 'exact', 
             functionality: function(chat, cmd) {
