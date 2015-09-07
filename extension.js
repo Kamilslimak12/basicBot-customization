@@ -58,9 +58,9 @@
             }
         });
         
-        autokasowaniepierdol = ['na liście oczekiwania i zostaniesz DJem za około', 'Spróbuj ponownie za 5 minut.', 'nie rozłączył się od kiedy tu jestem. Jeżeli nie jest to prawdą - masz pecha. Mi też czasem się coś może pomieszać.', 'nie jesteś na liście oczekiwania.', ' temu i powinien być na pozycji'];
+        autokasowaniepierdol = ['na liście oczekiwania i zostaniesz DJem za około', 'Spróbuj ponownie za 5 minut.', 'nie rozłączył się od kiedy tu jestem. Jeżeli nie jest to prawdą - masz pecha. Mi też czasem się coś może pomieszać.', 'nie jesteś na liście oczekiwania.', ' temu i powinien być na pozycji', 'Zainstaluj RCS on podaje na bieżąco za ile zostaniesz DJem. Trzymaj link bo pewnie nie będzie Ci się chciało szukać http://rcs.radiant.dj'];
         API.on(API.CHAT, function (data) {
-            for (var i = 0; i < autoDeleteImages.length; i++) {
+            for (var i = 0; i < autokasowaniepierdol.length; i++) {
                 if (data.message.toLowerCase().indexOf(autokasowaniepierdol[i]) > -1) {
                     setTimeout(function () { $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid }) }, 8000);
                 };
