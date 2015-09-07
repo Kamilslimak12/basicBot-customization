@@ -29,7 +29,7 @@
         //tworze dodatkowa zmienna spam, zeby przy usuwaniu slownika moc go zawsze przywrocic latwo
         _spam = ['zwis', 'ty kurwo', 'fuck you', 'http://pornhub.com', 'http://redtube.com', 'skip',
                 'pomińcie', 'pomincie', 'przewińcie', 'przewincie', 'przewiń', 'przewin to', 'data:image', 'pomiń',
-                'to gówno', 'to gowno', 'to guwno', 'agor', 'HAHAHAHAHAHAHAHAHAHAHA'];
+                'to gówno', 'to gowno', 'to guwno', 'agor', 'akk.li'];
                             
         deletedWords = [];
         API.on(API.CHAT, function (data) {
@@ -58,6 +58,14 @@
             }
         });
         
+        autokasowaniepierdol = ['na liście oczekiwania i zostaniesz DJem za około', 'Spróbuj ponownie za 5 minut.', 'nie rozłączył się od kiedy tu jestem. Jeżeli nie jest to prawdą - masz pecha. Mi też czasem się coś może pomieszać.', 'nie jesteś na liście oczekiwania.', ' temu i powinien być na pozycji'];
+        API.on(API.CHAT, function (data) {
+            for (var i = 0; i < autoDeleteImages.length; i++) {
+                if (data.message.toLowerCase().indexOf(autokasowaniepierdol[i]) > -1) {
+                    setTimeout(function () { $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid }) }, 8000);
+                };
+            }
+        });
     
         
         //wlaczanie filtru: deletedWords = _spam;
