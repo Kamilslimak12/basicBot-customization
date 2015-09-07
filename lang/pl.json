@@ -79,7 +79,7 @@
     "alreadyadding": "\/me U\u017cytkownik zosta\u0142 ju\u017c dodany!Przesuni\u0119to do porz\u0105dnego miejsca %%POSITION%%.",
     "adding": "\/me Dodano @%%NAME%% do kolejki. Aktualna kolejka: %%POSITION%%.",
     "usernotfound": "\/me U\u017cytkownik nie zosta\u0142 znaleziony.",
-    "notdisconnected": "\/me @%%NAME%% nie roz\u0142\u0105czy\u0142 si\u0119 od kiedy tu jestem.",
+    "notdisconnected": "\/me @%%NAME%% nie roz\u0142\u0105czy\u0142 si\u0119 od kiedy tu jestem. Jeżeli nie jest to prawdą - masz pecha. Mi też czasem się coś może pomieszać.",
     "noposition": "\/me Ostatnia pozycja nie jest znana.",
     "toolongago": "\/me @%%NAME%%'s twoje ostanie roz\u0142\u0105czenie (DC lub wyj\u015bcie) by\u0142o zbyt dawno temu: %%TIME%%.",
     "valid": "\/me @%%NAME%% roz\u0142\u0105czy\u0142 si\u0119 %%TIME%% temu i powinien by\u0107 na pozycji %%POSITION%%.",
