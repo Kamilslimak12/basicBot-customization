@@ -304,8 +304,7 @@
                              ':cherries:', 
                              ':green_heart:', 
                              ':bell:', 
-                             ':gem:', 
-                             ':slot_seven:'];
+                             ':gem:'];
             var slotValue = [1.5, 
                              2, 
                              2.5, 
@@ -316,8 +315,7 @@
                              5, 
                              5.5, 
                              6, 
-                             6.5, 
-                             7];    
+                             6.5];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
