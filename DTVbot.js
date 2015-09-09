@@ -2137,7 +2137,7 @@
                         var estimateString = basicBot.roomUtilities.msToStr(estimateMS);
                         API.sendChat(subChat(basicBot.chat.eta, {name: name, time: estimateString, position: realpos}));
                         setTimeout(function () {
-                            API.sendChat('Zainstaluj RCS on podaje na bieżąco za ile zostaniesz DJem. Trzymaj link bo pewnie nie będzie Ci się chciało szukać http://rcs.radiant.dj');
+                            API.sendChat('/em Zainstaluj RCS on podaje na bieżąco za ile zostaniesz DJem. Trzymaj link bo pewnie nie będzie Ci się chciało szukać http://rcs.radiant.dj');
                         }, 1000);                        
                     }
                 }
