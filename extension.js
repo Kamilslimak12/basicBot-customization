@@ -337,7 +337,7 @@
         
         //slots
         bot.commands.slotsCommand = { 
-            command: ['slots', 'slot'],  //The command to be called. With the standard command literal this would be: !slots
+            command: ['slots', 'slot', 'losuj', 'los'],  //The command to be called. With the standard command literal this would be: !slots
             rank: 'user', 
             type: 'startsWith',  
             functionality: function (chat, cmd) { 
