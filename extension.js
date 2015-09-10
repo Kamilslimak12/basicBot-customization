@@ -57,17 +57,6 @@
                 };
             }
         });
-        
-        autokasowaniepierdol = ['na liście oczekiwania i zostaniesz DJem za około', 'Spróbuj ponownie za 5 minut.', 'nie rozłączył się od kiedy tu jestem. Jeżeli nie jest to prawdą - masz pecha. Mi też czasem się coś może pomieszać.', 'nie jesteś na liście oczekiwania.', ' temu i powinien być na pozycji', 'Zainstaluj RCS on podaje na bieżąco za ile zostaniesz DJem. Trzymaj link bo pewnie nie będzie Ci się chciało szukać http://rcs.radiant.dj'];
-        API.on(API.CHAT, function (data) {
-            for (var i = 0; i < autokasowaniepierdol.length; i++) {
-                if (data.message.toLowerCase().indexOf(autokasowaniepierdol[i]) > -1) {
-                    setTimeout(function () { $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid }) }, 8000);
-                };
-            }
-        });
-    
-        
         //wlaczanie filtru: deletedWords = _spam;
         //wylaczanie filtru: deletedWords = [];
         
@@ -87,7 +76,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     deletedWords = [];
-                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69!!!");
+                    API.sendChat("/me Wyłączono AntyIdiotesMode!");
                 }
             }
         };
@@ -101,7 +90,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     deletedWords = _spam;
-                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI czatu v69!!!");
+                    API.sendChat("/me Włączono AntyIdiotesMode!");
                 }
             }
         };
@@ -114,7 +103,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     autoDeleteImages = [];
-                    API.sendChat("/me Wyłączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69!!!");
+                    API.sendChat("/me Wyłączono znikanie obrazków po 15 sekundach!");
                 }
             }
         };
@@ -128,7 +117,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     autoDeleteImages = _obrazki;
-                    API.sendChat("/me Włączono SuperExtraLimitowanąExtendedEdycjęNAZI znikania obrazków po 15 sekundach v69!!!");
+                    API.sendChat("/me Włączono znikanie obrazków po 15 sekundach!");
                 }
             }
         };
