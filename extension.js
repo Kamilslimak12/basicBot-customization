@@ -467,7 +467,7 @@
         etaRestriction: true,
         welcome: false,
         opLink: " :information_source: Zbanowne nuty od teraz znajdują się w zasadach.",
-        rulesLink: "http://justpaste.it/m4co",
+        rulesLink: "http://justpaste.it/npsn",
         themeLink: null,
         fbLink: "https://www.facebook.com/DisStream",
         youtubeLink: "https://www.youtube.com/user/DisStream",
