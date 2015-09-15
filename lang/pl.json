@@ -73,7 +73,7 @@
     "isblacklisted": "\/me Utwór jest zbanowany. Pomijam...",
     "isopen": "\/me Ruletka w\u0142\u0105czona! Wpisz !join aby do\u0142\u0105czy\u0107! (Wylosowana osoba zostanie przeniesiona na pierwsze miejsce w kolejce).",
     "winnerpicked": "\/me Zwyci\u0119zca zosta\u0142 wybrany! @%%NAME%%.",
-    "ball": "\/me %%NAME%% zapyta\u0142: \"%%QUESTION%%\" i %%BOTNAME%% odpowiada: \"%%RESPONSE%%\"",
+    "ball": "%%NAME%% zapyta\u0142: \"%%QUESTION%%\" i %%BOTNAME%% odpowiada: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% nie ghostuje.",
     "ghosting": "[%%NAME1%%] %%NAME2%% albo ghostuje albo go nie ma.",
     "alreadyadding": "\/me U\u017cytkownik zosta\u0142 ju\u017c dodany!Przesuni\u0119to do porz\u0105dnego miejsca %%POSITION%%.",
