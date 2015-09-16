@@ -139,7 +139,7 @@
                 }
             }
         };
-        
+     //sorry Hasz, musialem XD    
    bot.commands.powiedz = {
             command: 'powiedz',
             rank: 'manager',
