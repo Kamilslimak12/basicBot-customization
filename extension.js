@@ -1,4 +1,4 @@
-(function () {
+(function() {
 
     //Goodbye cruel world ~Wumekk
     //Change this to your GitHub username so you don't have to modify so many things.
@@ -71,7 +71,7 @@
             command: 'nmoff',
             rank: 'mod',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -85,7 +85,7 @@
             command: 'nmon',
             rank: 'mod',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -99,7 +99,7 @@
             command: 'inmoff',
             rank: 'mod',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -113,7 +113,7 @@
             command: 'inmon',
             rank: 'mod',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -127,7 +127,7 @@
             command: 'nightmode',
             rank: 'mod',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -144,7 +144,7 @@
             command: 'powiedz',
             rank: 'manager',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -158,7 +158,7 @@
             command: 'rcs',
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -171,7 +171,7 @@
             command: 'oporny',
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -184,7 +184,7 @@
             command: 'wumekk',
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -197,7 +197,7 @@
             command: 'komendy',
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -210,7 +210,7 @@
             command: 'instalacja',
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -223,7 +223,7 @@
             command: 'permaban',
             rank: 'mod',
             type: 'startsWith',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -245,7 +245,7 @@
             command: 'cykl',
             rank: 'mod',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -270,7 +270,7 @@
             command: 'pong',
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -283,7 +283,7 @@
             command: ['customemotes', 'ce'],
             rank: 'user',
             type: 'exact',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -351,7 +351,7 @@
             command: ['slots', 'slot', 'losuj', 'los'], //The command to be called. With the standard command literal this would be: !slots
             rank: 'user',
             type: 'startsWith',
-            functionality: function (chat, cmd) {
+            functionality: function(chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
