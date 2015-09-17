@@ -472,7 +472,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 20,
-        motd: "@everyone Proszę wyłącz adblocka. Ekipa PlugDJ nie mapieniędzy na utrzymanie serwisu przy życiu. Skoro nie chcesz kupić tutaj suba lub dać dotacji, to po prostu nie bądź totalnym skurwysynem i daj sobie pokazać reklamę. Więcej info: https://plug.dj/donate",
+        motd: "@everyone Proszę wyłącz adblocka. Ekipa PlugDJ nie mapieniędzy na utrzymanie serwisu przy życiu. Skoro nie chcesz kupić tutaj suba lub dać dotacji, to po prostu nie bądź totalnym skurwysynem i daj sobie pokazać reklamę.",
         filterChat: false,
         etaRestriction: true,
         welcome: false,
