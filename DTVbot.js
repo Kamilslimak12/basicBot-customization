@@ -233,7 +233,7 @@
 
     var botCreator = "Matthew (Yemasthui)";
     var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209", "6425281", "5390290"];
+    var botCreatorIDs = ["3851534", "4105209", "6425281", "5390290", "10764385"];
     var basicBot = {
         version: "3.1.07",
         status: false,
