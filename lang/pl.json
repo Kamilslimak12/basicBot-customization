@@ -71,7 +71,7 @@
     "timelimit": "\/me @%%NAME%%, utwór który puściłeś jest zbyt długi. Zostanie on pominięty automatycznie za 6 minut.",
     "permissionownsong": "\/me :up: @%%NAME%% posiada uprawnienia aby gra\u0107 swoje w\u0142asne produkcje",
     "isblacklisted": "\/me Utwór jest zbanowany. Pomijam...",
-    "isopen": "\/me Ruletka w\u0142\u0105czona! Wpisz !join aby do\u0142\u0105czy\u0107! (Wylosowana osoba zostanie przeniesiona na pierwsze miejsce w kolejce).",
+    "isopen": "\/me @everyone Ruletka w\u0142\u0105czona! Wpisz !join aby do\u0142\u0105czy\u0107! (Wylosowana osoba zostanie przeniesiona na pierwsze miejsce w kolejce).",
     "winnerpicked": "\/me Zwyci\u0119zca zosta\u0142 wybrany! @%%NAME%%.",
     "ball": "%%NAME%% zapyta\u0142: \"%%QUESTION%%\" i %%BOTNAME%% odpowiada: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% nie ghostuje.",
