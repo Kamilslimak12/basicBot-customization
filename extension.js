@@ -516,5 +516,4 @@ setInterval(function () {
     $.getScript("https://rawgit.com/WorstUdyrDE/basicBot-customization/master/DTVbot.js", extend);
 
 }).call(this);
-Status API Training Shop Blog About Pricing
-© 2015 GitHub, Inc. Terms Privacy Security Contact Help
+//co tu sie odjebalo
