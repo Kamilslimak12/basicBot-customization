@@ -3,7 +3,6 @@
 
     //Goodbye cruel world ~Wumekk
     //Change this to your GitHub username so you don't have to modify so many things.
-    bot.loggedInID = API.getUser().id;
     var fork = "WorstUdyrDE";
 
     //Define our function responsible for extending the bot.
@@ -353,7 +352,7 @@
                 setTimeout(function () {
                     API.sendChat("@" + chat.un + " OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
                     API.moderateMoveDJ(chat.uid, 1);
-                    if (chat.uid === bot.loggedInID) {
+                    if (chat.uid === API.getUser().id) {
                         setTimeout(function (id) {
                             API.moderateDeleteChat(id);
                         }, 7 * 1000, chat.cid);
@@ -400,7 +399,7 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
-                                if (chat.uid === bot.loggedInID) {
+                                if (chat.uid === API.getUser().id) {
                                     setTimeout(function (id) {
                                         API.moderateDeleteChat(id);
                                     }, 6 * 1000, chat.cid);
@@ -415,7 +414,7 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
-                                if (chat.uid === bot.loggedInID) {
+                                if (chat.uid === API.getUser().id) {
                                     setTimeout(function (id) {
                                         API.moderateDeleteChat(id);
                                     }, 6 * 1000, chat.cid);
