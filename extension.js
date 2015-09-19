@@ -301,7 +301,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    API.sendChat("@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć");
+                    API.sendChat("@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie pozwól jej umrzeć");
                 }
             }
         };  
@@ -489,7 +489,7 @@ setInterval(function () {
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 20,
+        motdInterval: 40,
         motd: "@everyone Proszę wyłącz adblocka. Ekipa PlugDJ nie mapieniędzy na utrzymanie serwisu przy życiu. Skoro nie chcesz kupić tutaj suba lub dać dotacji, to po prostu nie bądź totalnym skurwysynem i daj sobie pokazać reklamę.",
         filterChat: false,
         etaRestriction: true,
