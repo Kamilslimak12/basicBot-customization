@@ -353,6 +353,9 @@
                     API.sendChat("@" + chat.un + " OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
                     API.moderateMoveDJ(chat.uid, 1);
                 }, 2000);
+                setTimeout(function (id) {
+    API.moderateDeleteChat(id);
+}, 7 * 1000, chat.cid);
             } else {
                 winnings = 0;
             }
@@ -392,6 +395,9 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
+                            setTimeout(function (id) {
+    API.moderateDeleteChat(id);
+}, 5 * 1000, chat.cid);
                             }, 1000);
 
                         } else if (bet > 1) {
@@ -399,6 +405,9 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
+                            setTimeout(function (id) {
+    API.moderateDeleteChat(id);
+}, 5 * 1000, chat.cid);
                             }, 1000);
 
                         } else {
