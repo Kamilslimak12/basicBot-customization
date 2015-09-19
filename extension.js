@@ -287,10 +287,23 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    API.sendChat("/me Lista emotikon z naszej customizacji rooma: http://bit.ly/1NcjU3z");
+                    API.sendChat("@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć");
                 }
             }
         };
+        
+           bot.commands.cussstomeemotes = {
+            command: 'problem',
+            rank: 'user',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    API.sendChat("/me Lista emotikon z naszej customizacji rooma: http://bit.ly/1NcjU3z");
+                }
+            }
+        };  
 
         /* Testowo !slots, Thanks RAWRMedusa */
 
