@@ -279,8 +279,8 @@
             }
         };
 
-        bot.commands.cussstomeemotes = {
-            command: ['customemotes', 'ce'],
+        bot.commands.problemplugdj = {
+            command: 'problem',
             rank: 'user',
             type: 'exact',
             functionality: function(chat, cmd) {
@@ -293,7 +293,7 @@
         };
         
            bot.commands.cussstomeemotes = {
-            command: 'problem',
+            command: '['customemotes', 'ce'],
             rank: 'user',
             type: 'exact',
             functionality: function(chat, cmd) {
