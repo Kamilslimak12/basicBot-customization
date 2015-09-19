@@ -3,6 +3,7 @@
 
     //Goodbye cruel world ~Wumekk
     //Change this to your GitHub username so you don't have to modify so many things.
+    basicBot.loggedInID = API.getUser().id;
     var fork = "WorstUdyrDE";
 
     //Define our function responsible for extending the bot.
@@ -352,10 +353,14 @@
                 setTimeout(function () {
                     API.sendChat("@" + chat.un + " OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
                     API.moderateMoveDJ(chat.uid, 1);
+                    if (chat.uid === basicBot.loggedInID) {
+                        setTimeout(function (id) {
+                            API.moderateDeleteChat(id);
+                        }, 7 * 1000, chat.cid);
+                        return true;
+                    }
+                    return false;
                 }, 2000);
-                setTimeout(function (id) {
-    API.moderateDeleteChat(id);
-}, 7 * 1000, chat.cid);
             } else {
                 winnings = 0;
             }
@@ -368,7 +373,7 @@
             command: ['slots', 'slot', 'losuj', 'los'], //The command to be called. With the standard command literal this would be: !slots
             rank: 'user',
             type: 'startsWith',
-            functionality: function(chat, cmd) {
+            functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
@@ -395,9 +400,14 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
-                            setTimeout(function (id) {
-    API.moderateDeleteChat(id);
-}, 5 * 1000, chat.cid);
+                                if (chat.uid === basicBot.loggedInID) {
+                                    setTimeout(function (id) {
+                                        API.moderateDeleteChat(id);
+                                    }, 6 * 1000, chat.cid);
+                                    return true;
+                                }
+                                return false;
+
                             }, 1000);
 
                         } else if (bet > 1) {
@@ -405,9 +415,13 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
-                            setTimeout(function (id) {
-    API.moderateDeleteChat(id);
-}, 5 * 1000, chat.cid);
+                                if (chat.uid === basicBot.loggedInID) {
+                                    setTimeout(function (id) {
+                                        API.moderateDeleteChat(id);
+                                    }, 6 * 1000, chat.cid);
+                                    return true;
+                                }
+                                return false;
                             }, 1000);
 
                         } else {
@@ -417,7 +431,6 @@
                 }
             }
         };
-
 API.sendChat('@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć');
 setInterval(function () {
         API.sendChat('@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć');
