@@ -1,3 +1,18 @@
+Skip to content
+This repository  
+Search
+Pull requests
+Issues
+Gist
+ @WorstUdyrDE
+ Unwatch 4
+  Star 0
+  Fork 566 WorstUdyrDE/basicBot-customization
+forked from bscBot/custom
+Tree: 0712e973a8  basicBot-customization/extension.js
+@WorstUdyrDEWorstUdyrDE an hour ago Update extension.js
+6 contributors @WorstUdyrDE @wumekk @Benzi @Yemasthui @ServePeak @tnws
+RawBlameHistory    518 lines (468 sloc)  21.4 KB
 (function() {
 
     //Goodbye cruel world ~Wumekk
@@ -279,7 +294,20 @@
             }
         };
 
-        bot.commands.problemplugdj = {
+        bot.commands.cussstomeemotes = {
+            command: ['customemotes', 'ce'],
+            rank: 'user',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    API.sendChat("Lista emotikon z naszej customizacji rooma: http://bit.ly/1NcjU3z");
+                }
+            }
+        };
+        
+           bot.commands.plugproblem = {
             command: 'problem',
             rank: 'user',
             type: 'exact',
@@ -288,19 +316,6 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     API.sendChat("@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć");
-                }
-            }
-        };
-        
-           bot.commands.cussstomeemotes = {
-            command: '['customemotes', 'ce'],
-            rank: 'user',
-            type: 'exact',
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                if (!bot.commands.executable(this.rank, chat)) return void(0);
-                else {
-                    API.sendChat("/me Lista emotikon z naszej customizacji rooma: http://bit.ly/1NcjU3z");
                 }
             }
         };  
@@ -515,3 +530,5 @@ setInterval(function () {
     $.getScript("https://rawgit.com/WorstUdyrDE/basicBot-customization/master/DTVbot.js", extend);
 
 }).call(this);
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help
