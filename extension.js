@@ -1,18 +1,4 @@
-Skip to content
-This repository  
-Search
-Pull requests
-Issues
-Gist
- @WorstUdyrDE
- Unwatch 4
-  Star 0
-  Fork 566 WorstUdyrDE/basicBot-customization
-forked from bscBot/custom
-Tree: 0712e973a8  basicBot-customization/extension.js
-@WorstUdyrDEWorstUdyrDE an hour ago Update extension.js
-6 contributors @WorstUdyrDE @wumekk @Benzi @Yemasthui @ServePeak @tnws
-RawBlameHistory    518 lines (468 sloc)  21.4 KB
+//dafuq was dat
 (function() {
 
     //Goodbye cruel world ~Wumekk
