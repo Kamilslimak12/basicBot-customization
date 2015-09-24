@@ -3624,7 +3624,19 @@
                     }
                 }
             },
-
+            
+            Udyrv2222Command: {
+            command: 'udyr',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    API.sendChat("/me @- ๔ן ฬ๏гรt υ∂уя קl - jest miłością, @- ๔ן ฬ๏гรt υ∂уя קl - jest życiem <3");
+                }
+            }
+        },
             youtubeCommand: {
                 command: 'youtube',
                 rank: 'user',
@@ -3640,6 +3652,5 @@
             }
         }
     };
-
     loadChat(basicBot.startup);
 }).call(this);
