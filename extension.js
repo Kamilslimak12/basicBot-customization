@@ -63,6 +63,20 @@
                 };
             }
         });
+        
+kasowanieslotow = ['Spróbuj ponownie za 5 minut.'];
+API.on(API.CHAT, function (data) {
+    for (var i = 0; i < kasowanieslotow.length; i++) {
+        if (data.message.toLowerCase().indexOf(kasowanieslotow[i]) > -1) {
+            setTimeout(function () {
+                $.ajax({
+                    type: 'DELETE',
+                    url: '/_/chat/' + data.cid
+                })
+            }, 7000);
+        };
+    }
+});      
 
         function tsendChat(msg) {
             API.sendChat(msg);
