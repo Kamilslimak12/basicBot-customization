@@ -352,12 +352,9 @@
                 setTimeout(function () {
                     API.sendChat("@" + chat.un + " OGM Noob lucker reported... Wygrywasz... Pffff i tak powiecie, że było ustawione :keepo:");
                     API.moderateMoveDJ(chat.uid, 1);
-                    if (chat.uid === API.getUser().id) {
-                        setTimeout(function (id) {
-                            API.moderateDeleteChat(id);
-                        }, 7 * 1000, chat.cid);
-                        return true;
-                    }
+                    setTimeout(function () {
+                        API.moderateDeleteChat(chat.cid);
+                    }, 7 * 1000, chat.cid);
                     return false;
                 }, 2000);
             } else {
@@ -399,12 +396,9 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
-                                if (chat.uid === API.getUser().id) {
-                                    setTimeout(function (id) {
-                                        API.moderateDeleteChat(id);
-                                    }, 6 * 1000, chat.cid);
-                                    return true;
-                                }
+                                setTimeout(function () {
+                                    API.moderateDeleteChat(chat.cid);
+                                }, 4 * 1000, chat.cid);
                                 return false;
 
                             }, 1000);
@@ -414,12 +408,9 @@
 
                             setTimeout(function () {
                                 API.sendChat("@" + chat.un + " Wylosowano: " + outcome[0] + outcome[1] + outcome[2] + ". Spróbuj ponownie za 5 minut.")
-                                if (chat.uid === API.getUser().id) {
-                                    setTimeout(function (id) {
-                                        API.moderateDeleteChat(id);
-                                    }, 6 * 1000, chat.cid);
-                                    return true;
-                                }
+                                setTimeout(function () {
+                                    API.moderateDeleteChat(chat.cid);
+                                }, 4 * 1000, chat.cid);
                                 return false;
                             }, 1000);
 
