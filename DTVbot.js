@@ -3,7 +3,7 @@
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
  *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
  */
-
+//może jeszcze sie przydasz przyjacielu :) 
 
 (function () {
 
@@ -1448,7 +1448,7 @@
             API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
             socket();
             loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName, version: basicBot.version})));
-            API.sendChat("/me Ku chwale streamowi!");
+            API.sendChat("/me Wróciłem! Kto tęsknił?!");
         },
         commands: {
             executable: function (minRank, chat) {
