@@ -293,19 +293,6 @@
             }
         };
         
-           bot.commands.plugproblem = {
-            command: 'problem',
-            rank: 'mod',
-            type: 'exact',
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                if (!bot.commands.executable(this.rank, chat)) return void(0);
-                else {
-                    API.sendChat("@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie pozwól jej umrzeć");
-                }
-            }
-        };  
-
         /* Testowo !slots, Thanks RAWRMedusa */
 
         function spinSlots() {
