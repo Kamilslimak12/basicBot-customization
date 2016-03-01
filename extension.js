@@ -408,10 +408,6 @@
                 }
             }
         };
-API.sendChat('@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć');
-setInterval(function () {
-        API.sendChat('@everyone WAŻNA SPRAWA DOT. PLUGA - http://bit.ly/1Qp5Z9S Wspomóż platformę i nie powól jej umrzeć');
-}, 3600000);
         /*
          * Czysci wszelkie instrukcje z funkcji obslugujacych dane komendy
          * Oprocz tego przy funkcji refreshCommand pozwala odpalic ta funkcje wpisujac jedna z dwoch komend
@@ -487,7 +483,7 @@ setInterval(function () {
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: true,
+        motdEnabled: false,
         motdInterval: 40,
         motd: "@everyone Proszę wyłącz adblocka. Ekipa PlugDJ nie mapieniędzy na utrzymanie serwisu przy życiu. Skoro nie chcesz kupić tutaj suba lub dać dotacji, to po prostu nie bądź totalnym skurwysynem i daj sobie pokazać reklamę.",
         filterChat: false,
