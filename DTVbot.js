@@ -1448,7 +1448,7 @@
             API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
             socket();
             loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName, version: basicBot.version})));
-            API.sendChat("/me Wróciłem! Kto tęsknił?!");
+            API.sendChat("/me Ofensywny bot, kiedy przeginacie pałę.");
         },
         commands: {
             executable: function (minRank, chat) {
