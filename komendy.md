@@ -26,7 +26,6 @@ Manager
 |!refresh | | odświeża przeglądarkę na której uruchomiony jest bot |
 |!usercmdcd | X | ustaw 'czas odnowienia' komend dla zwykłych użytkowników |
 |!usercommands | | włącza/wyłącza komendy dla zwykłych użytkowników |
-
 Bouncer+
 --------
 
@@ -40,8 +39,14 @@ Bouncer+
 |!lockdown | | włącz/wyłącz czat tylko dla administracji |
 |!move | @user (X) | przenieś użytkownika w liście oczekiwania na pozycję X, kiedy X nie jest podane przenosi na 1 pozycję |
 |!remove | @user | usuń użytkownika z listy oczekiwania |
-|!permaban | @user | banuje permanentnie użytkownika
+|!deletechat | @user | usuwa wszystkie wiadomości wysłane przez danego użytkownika |
+|!permaban | @user | banuje permanentnie użytkownika |
 |!nightmode | | Ustawia: TimeGuard: false, Blacklist: false, HistorySkip: false / TimeGuard: true, Blacklist: true, HistorySkip: true.|
+|!cykl |  | Włącza/Wyłącza cykl DJski |
+|!nmon |  | Nazi Mode ON |
+|!nmoff |  | Nazi Mode OFF |
+|!inmon |  | Images Nazi Mode ON |
+|!inmoff |  | Images Nazi Mode OFF |
 
 Bouncer
 -------
@@ -88,11 +93,11 @@ User
 
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
+|!slot |  | Zagraj w Sloty. Możesz wygrać przerzucenie na 1. miejsce |
 |!8ball | (message) | zadaj botowi pytanie. |
 |!autowoot | | wysyła link do RCS |
 |!instalacja | | poradnik jak zainstalować RCS |
-|!emoji | | link do listy emotikon |
-|!emoty | | emotikony jakie zyskuje się z dodatkiem RCS |
+|!emoji | | emotikony jakie zyskuje się z dodatkiem RCS |
 |!ba | | przedstawia rangę "Ambasador Marki" |
 |!komendy | | wysyła link do tych komend |
 |!commands | | wysyła link do oryginalnych komend |
@@ -104,12 +109,11 @@ User
 |!help | | link do obrazka z pomocą do pluga |
 |!oporny | | wysyła poradnik do pluga w wersji dla opornych |
 |!link | | kiedy jesteś DJem i użyjesz tej komendy bot wyśle link do aktualnie granego utworu |
-|!op | | link do listy zbanowanych utworów |
+|!customemotes | | lista emotikon z naszej customizacji (tylko dla osób z RCS) |
 |!ping | | PONG! |
+|!pong | | PING! |
 |!rules | | link do zasad/regulaminu |
 |!website | | link do strony DTV |
 |!youtube | | link do kanału DTV |
 |!wumekk | | cała prawda o Wumkku |
-|!bronks | | bezsensowna komenda |
-|!love | | kolorowe serca <3 |
 
